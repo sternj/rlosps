@@ -1,0 +1,123 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('a[href*="#"].accordionLink').click(function (e) {
+            e.preventDefault()
+            let linkId = $.attr(this, 'href')
+            console.log(linkId)
+            $(linkId).closest('.collapse').collapse('show')
+              setTimeout(function () {
+                window.location = linkId
+              }, 300)
+          })
+        })
+
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <h2>DLCS standards</h2>
+    <ul> {% for obj in dlcs %}
+        <li>{{ obj }}</li>
+    {% endfor %}
+    </ul>
+    <h2>Plan for instruction</h2>
+
+    <div id="accordion">
+        {% for section in plan_for_instruction.sections %}
+
+            <div class="card">
+                <div class="card-header" id="heading{{ loop.index }}">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ loop.index }}"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            {{ section.name }}
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">{{ plan_for_instruction.teacher_role_label }}</div>
+                                <div class="col">{{ plan_for_instruction.student_role_label }}</div>
+                                <div class="col">{{ plan_for_instruction.check_for_understanding_label }}</div>
+                            </div>
+                            {% for item in section.rows %}
+                                <div class="row">
+                                    {% for section in plan_for_instruction.horiz_sections %}
+                                        <div class="col">
+                                            {% if section in item %}
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        {{ item[section] }}
+                                                        {% if 'rlm_ref' in item and item.rlm_ref.role == section %}
+                                                            <a href="#{{ item['rlm_ref']['ref'] }}" class="accordionLink" id="{{ item['rlm_ref']['ref'] }}-ref">RLM</a>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+        {# RLM section #}
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRlm" aria-expanded="true"
+                            aria-controls="collapseRlm">
+                        RLMs
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseRlm" class="collapse" aria-labelledby="headingRlm" data-parent="#accordion">
+                <div class="card-body">
+                    {% for rlm in rlms %}
+                        <div class="card" id="{{ rlm }}">
+                            <div class="card-header">
+                                <h1>{{ rlm }}</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    {% for rlmli in rlms[rlm] %}
+                                        <li>{{ rlmli }}</li>
+                                    {% endfor %}
+                                </ul>
+                                <a href="#{{ rlm }}-ref" class="accordionLink">back</a>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>

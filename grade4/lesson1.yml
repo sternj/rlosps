@@ -1,0 +1,126 @@
+---
+DLCS:
+  - "3-5.CT.a.2 Organize information in different ways to make it more useful/relevant"
+  - "3-5.CT.b.1 Define an algorithm as a sequence of instructions that can be processed by a computer"
+  - "3-5.CT.d.1 Individually and collaboratively create, test, and modify a program in a graphical environment (e.g., block-based visual programming language"
+  - "3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors"
+
+content_standards:
+  - name: CCCS.MATH.CONTENT.4.OA.A.1
+    text: >
+      Interpret a multiplication equation as a comparison, e.g., 
+      interpret 35 = 5 × 7 as a statement that 35 is 5 times as many as 7 and 7 times as many as 5. 
+      Represent verbal statements of multiplicative comparisons as multiplication equations.
+  - name: CCCS.MATH.CONTENT.4.OA.A.2
+    text: >
+      Multiply or divide to solve word problems involving multiplicative comparison, 
+      e.g., by using drawings and equations with a symbol for the unknown number to 
+      represent the problem, distinguishing multiplicative comparison from additive comparison
+objectives_goals:
+  - Students will understand that an algorithm is a sequence of events by acting out an algorithm using block-based coding
+
+knowledge:
+  label: "Students should know..."
+  items:
+    - Students should know that an algorithm is a sequence of events.
+    - Students will know what block-based coding looks like and how it works-blocks go in order from top to bottom and represent the algorithm.
+
+skills:
+  label: "Students should be able to..."
+  items:
+    - Read block-based coding
+    - Work together in a group of Students
+
+essential_questions:
+  - How can we use visual models to represent multiplicative comparison word problems?
+  - How do visuals help us better understand and then solve multiplicativecomparison word problems?
+
+plan_for_instruction:
+  teacher_role_label: "What is the teacher doing?"
+  student_role_label: "What are the students doing?"
+  check_for_understanding_label: "Checks for Understanding"
+  horiz_sections:
+    - teacher_role
+    - student_role
+    - check_for_understanding
+  sections:
+    - name: Crafting
+      rows:
+        - teacher_role: >
+            Teacher: Today you will be moving around the classroom to follow an algorithm.
+            An algorithm is a sequence of events. Many of you have used Scratch block-basedcoding
+            in the past. Today,we will use this to move around the room
+          student_role: Students will listen astheteacher reviews block-based coding and an algorithm.
+          check_for_understanding: Teacher will check that students are following the posted algorithms in the correct sequence.
+        - teacher_role: >
+            Teacher will put an unplugged code on the board for students to follow.
+            This can be printed out and hung up or put under the projector using the smartboard
+          check_for_understanding: Teacher will stop and give feedback if they do not
+        - teacher_role: >
+            Teacher: Remember that in block-based coding, the algorithm is followed in order from top to bottom
+          student_role: >
+            Students will stand up behind their desks and make sure they have room to move around.
+            Students will follow the first algorithm with the teacher.
+        - teacher_role: Teacher actsout the algorithm posted with the students two times
+        - teacher_role: Teacher posts another algorithm and hasstudents act it out on their own and watches how they follow the algorithm
+          student_role: Students will follow the second algorithm on their own
+          rlm_ref:
+            role: teacher_role
+            ref: rlm1
+        - teacher_role: "Teacher: Turn and talk about the answers to these questions"
+          student_role: Students will turn and talk about the questions asked and then share out their thinking
+        - teacher_role: What was difficult about this task?Were you able to follow the algorithm exactly?Do you think you can make your own algorithm?
+      differentiation:
+        - "Reviewing vocabulary that may be in the algorithms. Example: jump, stop, go, start, say."
+        - "Pair lower EL students with higher EL students who speak the same language for help with Tier 1 andTier2 vocabulary"
+        - "If available, EL teacher can stand with group of low level EL students toshow them vocabulary they do not understand"
+
+    - name: Composing Meaning
+      rows:
+        - teacher_role: >
+            Important tothoughtfully pair students before lesson (SPED with regular ed, Higher EL with lower EL of same language,
+            keep behaviors in mind etc.)
+          student_role: >
+            Students are working in pairs to create their own 4 -event algorithm. They will cut and glue it onto a piece of paper.
+          check_for_understanding: Teachers will be circulating and checking sequencing.
+          rlm_ref:
+            role: student_role
+            ref: rlm3
+        - teacher_role: >
+            Explain to students that they will now be constructing their own algorithms for another partner group to follow.
+            Student should be placed in pairs for this activity so they can work together.
+            They should also be assigned another partnership to work with once the algorithms are complete.
+          student_role: >
+            Partners will get with another pair and switch algorithms. The partners will have to follow the algorithm of the other group.
+          check_for_understanding: >
+            Asking probing questions, “Are you sure that goes before this?” “Will other students know what you mean by this language?” etc
+        - teacher_role: >
+            Teacher: Today you will be making
+            your own algorithm to see if another group of students can follow. Your algorithm will have 4 events just like the onesyou just followed with me
+          student_role: Students will make sure the other group is following their algorithm correctly.
+          rlm_ref:
+            role: student_role
+            ref: rlm4
+        - teacher_role: >
+            You will be able to use blocks that are already made and cut up to put your algorithm together, or you canuse the blank template to
+            make up your own algorithm.
+        - teacher_role: You will need to put your algorithm in the exact order you want your classmates to complete the steps in, from top to bottom
+      differentiation:
+        - "Pair students intentionally: lower EL with higher EL of same language so they can translate vocabulary, SPED with regular education student"
+        - "Sped or EL teacher can pull a small group to work together and make 2 sets of algorithms to havethe group follow"
+        - Glossary available forEL students to understand language in algorithms
+        - Allow students to write their algorithm in theirnative language
+rlms:
+  rlm1:
+    - In a whole class Zoom session, screen share the unplugged code that the teacher will model twice
+  rlm2:
+    - Utilize breakout rooms to partner students (teacher can join different breakout rooms to check-in with students as their way of "circulating"
+    - Teacher will post a link in the Zoom chat that will lead students to the algorithm they will be acting out with one another
+  rlm3:
+    - Utilize breakout rooms to allow pairs of students to create a 4-step algorithm on a Microsoft Word document (teacher can join different breakout rooms to check-in with students as their way of "circulating")
+  rlm4:
+    - Utilize breakout rooms to allow pairs of students to switch algorithmson a shared Microsoft Word document(teacher can join different breakout rooms to check-in with students as their way of "circulating")
+  rlm5:
+    - In a whole class Zoom session, discuss algorithms and group work.
+  rlm6:
+    - Post the Computer Science Vocabulary Graphic Organizerfor students to access on your preferred application (Schoology, Teams, etc.)
