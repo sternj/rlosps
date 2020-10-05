@@ -69,7 +69,7 @@ plan_for_instruction:
             ref: rlm1
         - teacher_role: "Teacher: Turn and talk about the answers to these questions"
           student_role: Students will turn and talk about the questions asked and then share out their thinking
-        - teacher_role: What was difficult about this task?Were you able to follow the algorithm exactly?Do you think you can make your own algorithm?
+        - teacher_role: What was difficult about this task? Were you able to follow the algorithm exactly? Do you think you can make your own algorithm?
       differentiation:
         - "Reviewing vocabulary that may be in the algorithms. Example: jump, stop, go, start, say."
         - "Pair lower EL students with higher EL students who speak the same language for help with Tier 1 andTier2 vocabulary"
