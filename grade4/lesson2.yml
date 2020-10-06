@@ -6,7 +6,7 @@ DLCS:
   - "3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors."
 
 content_standards:
-  - name: CCSS.MATH.CONTENT.4.OA.A.1 
+  - name: CCSS.MATH.CONTENT.4.OA.A.1
     text: >
       Interpret a multiplication equation as a comparison, e.g., 
       interpret 35 = 5 × 7 as a statement that 35 is 5 times as many as 7 and 7 times as many as 5. 
@@ -17,8 +17,8 @@ content_standards:
       e.g., by using drawings and equations with a symbol for the unknown number to 
       represent the problem, distinguishing multiplicative comparison from additive comparison
 objectives_goals:
-  - Students will solve a multiplicative comparison word problem. 
-  - Students will create an algorithm on paper to represent and understand a multiplicative comparison word problem. 
+  - Students will solve a multiplicative comparison word problem.
+  - Students will create an algorithm on paper to represent and understand a multiplicative comparison word problem.
 
 knowledge:
   label: "Students should know..."
@@ -29,8 +29,8 @@ knowledge:
 skills:
   label: "Students should be able to..."
   items:
-    - Students should be able to use 3 reads from Ready Math to solve a word problem. 
-    - Students should be able to relate a sequence of events in a word problem toa sequence of events in an algorithm. 
+    - Students should be able to use 3 reads from Ready Math to solve a word problem.
+    - Students should be able to relate a sequence of events in a word problem toa sequence of events in an algorithm.
 
 essential_questions:
   - How can we use visual models to represent multiplicative comparison word problems?
@@ -76,8 +76,8 @@ plan_for_instruction:
             2 X R = J
             Should we multiply or divide to solve?
             Draw Jane and represent 2 times as many by drawing 2 circles for the groups. Draw 3 cats in each group. Count how many cats Jane has and solve by multiplying 2 X 3 = 6.
-            Fill in the target sentence we made in the beginning. Jane has 6 cats. 
-          rlm_ref: 
+            Fill in the target sentence we made in the beginning. Jane has 6 cats.
+          rlm_ref:
             role: teacher_role
             ref: rlm7
         - teacher_role: Remind students that they will be creating their visual on Scratch in the following lesson.
@@ -133,7 +133,7 @@ plan_for_instruction:
           rlm_ref:
             role: teacher_role
             rlm_ref: rlm9
-          student_role: Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer. 
+          student_role: Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer.
         - rlm_ref:
             role: student_role
             rlm_ref: rlm10
@@ -145,14 +145,16 @@ plan_for_instruction:
         - "It was difficult to…"
 
 rlms:
-  rlm7:
-    In a whole class Zoom session, screen share the word problem.
-    Engage students using the three-reads organizer from Ready Math. Students will answer questions to help fill in the organizer.
-    Screen share the Zoom whiteboard to model how to represent the word problem visually.
-  rlm8:
-    Post the word problems from the Fluency and Skills practice page and Scratch checklist for students to access on your preferred application (Schoology, Teams, etc.). Assign student pairs to a different word problem.
-    Utilize breakout rooms to allow pairs of students to switch algorithms on a shared Microsoft Word document (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
-  rlm9:
-    In a whole class Zoom session, discuss algorithms and group work.
-  rlm10:
-    Post the Computer Science Vocabulary Graphic Organizer for students to access on your preferred application (Schoology, Teams, etc.).
+  rlm7: 
+    - >
+      In a whole class Zoom session, screen share the word problem.
+      Engage students using the three-reads organizer from Ready Math. Students will answer questions to help fill in the organizer.
+      Screen share the Zoom whiteboard to model how to represent the word problem visually.
+  rlm8: 
+    - >
+      Post the word problems from the Fluency and Skills practice page and Scratch checklist for students to access on your preferred application (Schoology, Teams, etc.). Assign student pairs to a different word problem.
+      Utilize breakout rooms to allow pairs of students to switch algorithms on a shared Microsoft Word document (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
+  rlm9: 
+    - In a whole class Zoom session, discuss algorithms and group work.
+  rlm10: 
+    - Post the Computer Science Vocabulary Graphic Organizer for students to access on your preferred application (Schoology, Teams, etc.).

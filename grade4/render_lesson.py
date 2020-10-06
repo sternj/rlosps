@@ -1,7 +1,7 @@
 import yaml
 import jinja2
 import os
-with open('lesson1.yml') as f:
+with open('lesson2.yml') as f:
     lesson = yaml.load(f, Loader=yaml.FullLoader)
 templateLoader = jinja2.FileSystemLoader(searchpath="./")
 templateEnv = jinja2.Environment(loader=templateLoader)
@@ -12,5 +12,5 @@ outputText = template.render(
     rlms=lesson['rlms']
 )
 
-with open('lesson1.html', 'w+') as f:
+with open('lesson2.html', 'w+') as f:
     f.write(outputText)
