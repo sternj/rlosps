@@ -19,8 +19,8 @@ def validate_extension(extensions):
 
 
 @click.command()
+@click.argument('data', callback=validate_extension(['.yml', '.yaml']), required=True)
 @click.option('--template', default='lesson.html.jinja2', callback=validate_extension(['.jinja2']))
-@click.option('--data', '--yml-file',  callback=validate_extension(['.yml', '.yaml']), required=True)
 def render_relpath(data, template):
     current_dir = os.path.dirname(os.path.realpath(__file__))
     with open(os.path.join(current_dir, data)) as f:
