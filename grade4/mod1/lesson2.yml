@@ -80,6 +80,7 @@ plan_for_instruction:
           rlm_ref:
             role: teacher_role
             ref: rlm7
+            rlm_num: 7
         - teacher_role: Remind students that they will be creating their visual on Scratch in the following lesson.
       differentiation:
         - "Sentence starters for T&T discussion"

@@ -68,7 +68,7 @@
                                                     <div class="card-body">
                                                         {{ item[section] }}
                                                         {% if 'rlm_ref' in item and item.rlm_ref.role == section %}
-                                                            <a href="#{{ item['rlm_ref']['ref'] }}" class="accordionLink" id="{{ item['rlm_ref']['ref'] }}-ref">RLM</a>
+                                                            <a href="#{{ item['rlm_ref']['ref'] }}" class="accordionLink" id="{{ item['rlm_ref']['ref'] }}-ref">Remote Learning Modification {{ item['rlm_ref']['rlm_num']  }}</a>
                                                         {% endif %}
                                                     </div>
                                                 </div>
@@ -89,7 +89,7 @@
                 <h5 class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRlm" aria-expanded="true"
                             aria-controls="collapseRlm">
-                        RLMs
+                        Remote Learning Modifications
                     </button>
                 </h5>
             </div>
@@ -106,7 +106,7 @@
                                         <li>{{ rlmli }}</li>
                                     {% endfor %}
                                 </ul>
-                                <a href="#{{ rlm }}-ref" class="accordionLink">back</a>
+                                <a href="#{{ rlm }}-ref" class="accordionLink">Back to Lesson</a>
                             </div>
                         </div>
 

@@ -67,6 +67,7 @@ plan_for_instruction:
           rlm_ref:
             role: teacher_role
             ref: rlm1
+            rlm_num: 1
         - teacher_role: "Teacher: Turn and talk about the answers to these questions"
           student_role: Students will turn and talk about the questions asked and then share out their thinking
         - teacher_role: What was difficult about this task? Were you able to follow the algorithm exactly? Do you think you can make your own algorithm?
@@ -86,6 +87,7 @@ plan_for_instruction:
           rlm_ref:
             role: student_role
             ref: rlm3
+            rlm_num: 3
         - teacher_role: >
             Explain to students that they will now be constructing their own algorithms for another partner group to follow.
             Student should be placed in pairs for this activity so they can work together.
@@ -101,6 +103,7 @@ plan_for_instruction:
           rlm_ref:
             role: student_role
             ref: rlm4
+            rlm_num: 4
         - teacher_role: >
             You will be able to use blocks that are already made and cut up to put your algorithm together, or you canuse the blank template to
             make up your own algorithm.
