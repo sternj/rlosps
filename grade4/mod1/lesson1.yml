@@ -33,7 +33,7 @@ skills:
 
 essential_questions:
   - How can we use visual models to represent multiplicative comparison word problems?
-  - How do visuals help us better understand and then solve multiplicativecomparison word problems?
+  - How do visuals help us better understand and then solve multiplicative comparison word problems?
 
 plan_for_instruction:
   teacher_role_label: "What is the teacher doing?"
@@ -48,9 +48,9 @@ plan_for_instruction:
       rows:
         - teacher_role: >
             Teacher: Today you will be moving around the classroom to follow an algorithm.
-            An algorithm is a sequence of events. Many of you have used Scratch block-basedcoding
+            An algorithm is a sequence of events. Many of you have used Scratch block-based coding
             in the past. Today,we will use this to move around the room
-          student_role: Students will listen astheteacher reviews block-based coding and an algorithm.
+          student_role: Students will listen as the teacher reviews block-based coding and an algorithm.
           check_for_understanding: Teacher will check that students are following the posted algorithms in the correct sequence.
         - teacher_role: >
             Teacher will put an unplugged code on the board for students to follow.
@@ -62,7 +62,7 @@ plan_for_instruction:
             Students will stand up behind their desks and make sure they have room to move around.
             Students will follow the first algorithm with the teacher.
         - teacher_role: Teacher actsout the algorithm posted with the students two times
-        - teacher_role: Teacher posts another algorithm and hasstudents act it out on their own and watches how they follow the algorithm
+        - teacher_role: Teacher posts another algorithm and has students act it out on their own and watches how they follow the algorithm
           student_role: Students will follow the second algorithm on their own
           rlm_ref:
             role: teacher_role
@@ -73,12 +73,12 @@ plan_for_instruction:
       differentiation:
         - "Reviewing vocabulary that may be in the algorithms. Example: jump, stop, go, start, say."
         - "Pair lower EL students with higher EL students who speak the same language for help with Tier 1 andTier2 vocabulary"
-        - "If available, EL teacher can stand with group of low level EL students toshow them vocabulary they do not understand"
+        - "If available, EL teacher can stand with group of low level EL students to show them vocabulary they do not understand"
 
     - name: Composing Meaning
       rows:
         - teacher_role: >
-            Important tothoughtfully pair students before lesson (SPED with regular ed, Higher EL with lower EL of same language,
+            Important to thoughtfully pair students before lesson (SPED with regular ed, Higher EL with lower EL of same language,
             keep behaviors in mind etc.)
           student_role: >
             Students are working in pairs to create their own 4 -event algorithm. They will cut and glue it onto a piece of paper.
@@ -96,20 +96,20 @@ plan_for_instruction:
             Asking probing questions, “Are you sure that goes before this?” “Will other students know what you mean by this language?” etc
         - teacher_role: >
             Teacher: Today you will be making
-            your own algorithm to see if another group of students can follow. Your algorithm will have 4 events just like the onesyou just followed with me
+            your own algorithm to see if another group of students can follow. Your algorithm will have 4 events just like the ones you just followed with me
           student_role: Students will make sure the other group is following their algorithm correctly.
           rlm_ref:
             role: student_role
             ref: rlm4
         - teacher_role: >
-            You will be able to use blocks that are already made and cut up to put your algorithm together, or you canuse the blank template to
+            You will be able to use blocks that are already made and cut up to put your algorithm together, or you can use the blank template to
             make up your own algorithm.
         - teacher_role: You will need to put your algorithm in the exact order you want your classmates to complete the steps in, from top to bottom
       differentiation:
         - "Pair students intentionally: lower EL with higher EL of same language so they can translate vocabulary, SPED with regular education student"
-        - "Sped or EL teacher can pull a small group to work together and make 2 sets of algorithms to havethe group follow"
+        - "Sped or EL teacher can pull a small group to work together and make 2 sets of algorithms to have the group follow"
         - Glossary available forEL students to understand language in algorithms
-        - Allow students to write their algorithm in theirnative language
+        - Allow students to write their algorithm in the irnative language
 rlms:
   rlm1:
     - In a whole class Zoom session, screen share the unplugged code that the teacher will model twice
@@ -119,8 +119,8 @@ rlms:
   rlm3:
     - Utilize breakout rooms to allow pairs of students to create a 4-step algorithm on a Microsoft Word document (teacher can join different breakout rooms to check-in with students as their way of "circulating")
   rlm4:
-    - Utilize breakout rooms to allow pairs of students to switch algorithmson a shared Microsoft Word document(teacher can join different breakout rooms to check-in with students as their way of "circulating")
+    - Utilize breakout rooms to allow pairs of students to switch algorithms on a shared Microsoft Word document(teacher can join different breakout rooms to check-in with students as their way of "circulating")
   rlm5:
     - In a whole class Zoom session, discuss algorithms and group work.
   rlm6:
-    - Post the Computer Science Vocabulary Graphic Organizerfor students to access on your preferred application (Schoology, Teams, etc.)
+    - Post the Computer Science Vocabulary Graphic Organizer for students to access on your preferred application (Schoology, Teams, etc.)
