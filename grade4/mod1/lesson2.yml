@@ -48,9 +48,9 @@ plan_for_instruction:
     - name: Crafting
       rows:
         - teacher_role: >
-            Teacher will model breaking apart a simple multiplicative comparison word probing using the 3-reads orgaizer based on Ready Math.
+            Teacher will model breaking apart a simple multiplicative comparison word probing using the 3-reads organizer based on Ready Math.
           student_role: Tracking teacher.
-          check_for_understanding: Can students find the important infromation in the word problem?
+          check_for_understanding: Can students find the important information in the word problem?
         - teacher_role: >
             Ruby has 3 cats. Jane has 2 times as many cats as Ruby. How many cats does Jane have?
           student_role: Participating in conversation about the word problem and helping teacher fill in organizer and solve.
@@ -111,7 +111,7 @@ plan_for_instruction:
             ref: rlm8
         - student_role: >
             3. Decide whether you will multiply or divide.
-            4. Draw a visual to represent your problem that you will recreate on Scratchbe creative!
+            4. Draw a visual to represent your problem that you will recreate on Scratch, be creative!
             5. Solve equation and fill in target sentence with an answer
       differentiation:
         - "Pull small group of EL or SPED students to read the problem aloud and fill out the organizer together"
