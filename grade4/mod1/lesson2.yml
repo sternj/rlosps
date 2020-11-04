@@ -76,11 +76,8 @@ plan_for_instruction:
             2 X R = J
             Should we multiply or divide to solve?
             Draw Jane and represent 2 times as many by drawing 2 circles for the groups. Draw 3 cats in each group. Count how many cats Jane has and solve by multiplying 2 X 3 = 6.
-            Fill in the target sentence we made in the beginning. Jane has 6 cats.
-          rlm_ref:
-            role: teacher_role
-            ref: rlm7
-            rlm_num: 7
+            Fill in the target sentence we made in the beginning. Jane has 6 cats. {rlm}[7](RLM)
+
         - teacher_role: Remind students that they will be creating their visual on Scratch in the following lesson.
       differentiation:
         - "Sentence starters for T&T discussion"
@@ -104,12 +101,10 @@ plan_for_instruction:
         - teacher_role: Asking guiding questions.
           student_role: 1. Read 3 times and fill in what you need to find, what is important, and a target sentence.
           check_for_understanding: Are students drawing visuals that represent the problem correctly?
-        - teacher_role: Talk with groups about their plan to visualize the problem. Pull small groups of students if they are having trouble.
+        - teacher_role: Talk with groups about their plan to visualize the problem. Pull small groups of students if they are having trouble. {rlm}[8](RLM)
           student_role: 2. Write an equation to help you solve using a variable.
           check_for_understanding: Are students working together collaboratively? (or is one student doing all the work?)
-          rlm_ref:
-            role: teacher_role
-            ref: rlm8
+
         - student_role: >
             3. Decide whether you will multiply or divide.
             4. Draw a visual to represent your problem that you will recreate on Scratch, be creative!
@@ -130,14 +125,9 @@ plan_for_instruction:
         - teacher_role: >
             Was it difficult to draw a picture of the problem? If so, what made it difficult? (Possible answers: too many objects to draw – ex. 45 stars)
           student_role: Share out struggles and successes in the process
-        - teacher_role: Did your visual help you solve the problem?
-          rlm_ref:
-            role: teacher_role
-            rlm_ref: rlm9
-          student_role: Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer.
-        - rlm_ref:
-            role: student_role
-            rlm_ref: rlm10
+        - teacher_role: Did your visual help you solve the problem? {rlm}[9](RLM)
+          student_role: Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer. {rlm}[10](RLM)
+
       differentiation:
         - "Sentence starters for sharing out:"
         - "My partner and I struggled with…"

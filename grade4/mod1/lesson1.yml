@@ -62,12 +62,11 @@ plan_for_instruction:
             Students will stand up behind their desks and make sure they have room to move around.
             Students will follow the first algorithm with the teacher.
         - teacher_role: Teacher actsout the algorithm posted with the students two times
-        - teacher_role: Teacher posts another algorithm and has students act it out on their own and watches how they follow the algorithm
+        - teacher_role: >
+            Teacher posts another algorithm and has students act it out on their own and watches
+            how they follow the algorithm {rlm}[1](RLM)
           student_role: Students will follow the second algorithm on their own
-          rlm_ref:
-            role: teacher_role
-            ref: rlm1
-            rlm_num: 1
+
         - teacher_role: "Teacher: Turn and talk about the answers to these questions"
           student_role: Students will turn and talk about the questions asked and then share out their thinking
         - teacher_role: What was difficult about this task? Were you able to follow the algorithm exactly? Do you think you can make your own algorithm?
@@ -82,32 +81,21 @@ plan_for_instruction:
             Important to thoughtfully pair students before lesson (SPED with regular ed, Higher EL with lower EL of same language,
             keep behaviors in mind etc.)
           student_role: >
-            Students are working in pairs to create their own 4 -event algorithm. They will cut and glue it onto a piece of paper.
+            Students are working in pairs to create their own 4 -event algorithm. They will cut and glue it onto a piece of paper. {rlm}[3](RLM)
           check_for_understanding: Teachers will be circulating and checking sequencing.
-          rlm_ref:
-            role: student_role
-            ref: rlm3
-            rlm_num: 3
         - teacher_role: >
             Explain to students that they will now be constructing their own algorithms for another partner group to follow.
             Student should be placed in pairs for this activity so they can work together.
-            They should also be assigned another partnership to work with once the algorithms are complete.
+            They should also be assigned another partnership to work with once the algorithms are complete. {rlm}[2](RLM)
           student_role: >
             Partners will get with another pair and switch algorithms. The partners will have to follow the algorithm of the other group.
           check_for_understanding: >
             Asking probing questions, “Are you sure that goes before this?” “Will other students know what you mean by this language?” etc
-          rlm_ref:
-            role: teacher_role
-            ref: rlm2
-            rlm_num: 2
         - teacher_role: >
             Teacher: Today you will be making
             your own algorithm to see if another group of students can follow. Your algorithm will have 4 events just like the ones you just followed with me
-          student_role: Students will make sure the other group is following their algorithm correctly.
-          rlm_ref:
-            role: student_role
-            ref: rlm4
-            rlm_num: 4
+          student_role: Students will make sure the other group is following their algorithm correctly. {rlm}[4](RLM)
+
         - teacher_role: >
             You will be able to use blocks that are already made and cut up to put your algorithm together, or you can use the blank template to
             make up your own algorithm.
@@ -115,7 +103,7 @@ plan_for_instruction:
       differentiation:
         - "Pair students intentionally: lower EL with higher EL of same language so they can translate vocabulary, SPED with regular education student"
         - "Sped or EL teacher can pull a small group to work together and make 2 sets of algorithms to have the group follow"
-        - Glossary available forEL students to understand language in algorithms
+        - Glossary available for EL students to understand language in algorithms
         - Allow students to write their algorithm in the irnative language
     - name: processing
       rows:
@@ -126,18 +114,11 @@ plan_for_instruction:
           check_for_understanding: >
             Teacher walks around and listens to conversations.
         - teacher_role: What did you have to know to make sure the other group followed your algorithm correctly?
-          student_role: Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer.
+          student_role: Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer. {rlm}[6](RLM)
           check_for_understanding: Teacher will take notes on which students felt this was difficult and who did not for future partnerships.
-          rlm_ref:
-            role: student_role
-            ref: rlm6
-            rlm_num: 6
         - teacher_role: Do you think you will be able to make an algorithm like this on the computer
-        - teacher_role: Have students discuss questions with the students in their groups and then have volunteers share out.
-          rlm_ref:
-            role: teacher_role
-            ref: rlm5
-            rlm_num: 5
+        - teacher_role: Have students discuss questions with the students in their groups and then have volunteers share out. {rlm}[5](RLM)
+
 rlms:
   rlm1:
     - In a whole class Zoom session, screen share the unplugged code that the teacher will model twice

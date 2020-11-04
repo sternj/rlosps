@@ -136,10 +136,10 @@
                                             {% if section in item %}
                                                 <div class="card">
                                                     <div class="card-body">
-                                                        {{ item[section] }}
-                                                        {% if 'rlm_ref' in item and item.rlm_ref.role == section %}
-                                                            <a href="#{{ item['rlm_ref']['ref'] }}" class="accordionLink" id="{{ item['rlm_ref']['ref'] }}-ref">Remote Learning Modification {{ item['rlm_ref']['rlm_num']  }}</a>
-                                                        {% endif %}
+                                                        {{ item[section] | sanitize }}
+{#                                                        {% if 'rlm_ref' in item and item.rlm_ref.role == section %}#}
+{#                                                            <a href="#{{ item['rlm_ref']['ref'] }}" class="accordionLink" id="{{ item['rlm_ref']['ref'] }}-ref">Remote Learning Modification {{ item['rlm_ref']['rlm_num']  }}</a>#}
+{#                                                        {% endif %}#}
                                                     </div>
                                                 </div>
                                             {% endif %}
