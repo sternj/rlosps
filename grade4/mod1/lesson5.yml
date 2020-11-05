@@ -61,10 +61,7 @@ plan_for_instruction:
         - teacher_role: >
             You will need to solve the problem on your own first before you can decide if the visual is correct.
         - teacher_role: >
-            After you have determined if the visual is correct or incorrect, you will look at the coding of the visual to see if there is any “debugging” or correcting that needs to happen within the algorithms.
-          rlm_ref:
-            role: teacher_role
-            ref: rlm22
+            After you have determined if the visual is correct or incorrect, you will look at the coding of the visual to see if there is any “debugging” or correcting that needs to happen within the algorithms. {rlm}[22](RLM)
         - teacher_role: >
             Computer Science Content Talking Point:
             Have students T &T- How do you fix something that is not working?
@@ -103,10 +100,7 @@ plan_for_instruction:
             One thing that this group did well with making the Scratch visual was...
             One thing that would make the Scratch visual better is....
           check_for_understanding: >
-            Are they using computer science vocabulary in their explanations and discussions?
-          rlm_ref:
-            role: teacher_role
-            ref: rlm23
+            Are they using computer science vocabulary in their explanations and discussions? {rlm}[23](RLM)
       differentiation:
         - Read aloud for students who need it.
         - Sentence starters for paper and discussion.
@@ -137,15 +131,9 @@ plan_for_instruction:
           student_role: >
             If any students got this far, they could show how they fixed the coding to fix mistakes in the Scratch visuals.
         - teacher_role: >
-            Have students share out ideas on how to fix visuals that did not match up with the word problem.
+            Have students share out ideas on how to fix visuals that did not match up with the word problem. {rlm}[24](RLM)
           student_role: >
-            If time allows, let groups go back and try to fix coding if their visual was not accurate.
-          rlm_ref:
-            role: teacher_role
-            ref: rlm24
-          rlm_ref:
-            role: student_role
-            ref: rlm25
+            If time allows, let groups go back and try to fix coding if their visual was not accurate. {rlm}[25](RLM)
       differentiation:
         - Bring work from groups to the rug.
         - Sentence starters for sharing out.

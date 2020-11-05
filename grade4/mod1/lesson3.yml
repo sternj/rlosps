@@ -8,13 +8,13 @@ DLCS:
 content_standards:
   - name: CCSS.MATH.CONTENT.4.OA.A.1
     text: >
-      Interpret a multiplication equation as a comparison, e.g., interpret 35 = 5 × 7 as a statement that 35 is 5 times as many as 7 and 7 times as many as 5. 
-      Represent verbal statements of multiplicative comparisons as multiplication equations. 
+      Interpret a multiplication equation as a comparison, e.g., interpret 35 = 5 × 7 as a statement that 35 is 5 times as many as 7 and 7 times as many as 5.
+      Represent verbal statements of multiplicative comparisons as multiplication equations.
   - name: CCSS.MATH.CONTENT.4.OA.A.2
     text: >
       Multiply or divide to solve word problems involving multiplicative comparison, e.g., by using
       drawings and equations with a symbol for the unknown number to represent the problem,
-      distinguishing multiplicative comparison from additive comparison. 
+      distinguishing multiplicative comparison from additive comparison.
 objectives_goals:
   - Students will solve a multiplicative comparison word problem.
   - Students will learn how to code a multiplicative comparison word problem using block-based coding.
@@ -49,8 +49,8 @@ plan_for_instruction:
 #            role: teacher_role
 #            ref: rml11
         - teacher_role: >
-            Teacher: In the previous lesson, you saw an example of a word problem and 
-            used the three reads routine to solve the problem. 
+            Teacher: In the previous lesson, you saw an example of a word problem and
+            used the three reads routine to solve the problem.
           student_role: >
             During this process, students may want to sit with their partner.
         - teacher_role: >
@@ -61,20 +61,20 @@ plan_for_instruction:
         - teacher_role: >
             Teacher will review the visual of the word problem modeled in the previous lesson:
           student_role: >
-            After teacher introduces the tools, students will turn and talk about how 
+            After teacher introduces the tools, students will turn and talk about how
             they might want to use these tools.
           check_for_understanding: >
             Teacher observation while students are turning and talking.
         - teacher_role: >
             Ruby has 3 cats. Jane has 2 times as many cats as Ruby. How many cats does Jane have? {rlm}[12](RLM)
           student_role: >
-            Students will have Scratch block-code visuals that they may use to follow 
+            Students will have Scratch block-code visuals that they may use to follow
             along with the teacher’s coding on the board.
           check_for_understanding: >
             Are students able to follow along and make the same algorithms as the teacher?
         - teacher_role: >
             PowerPoint visuals are attached to show the coding of each aspect of the visual.
-            This will also be posted for students to follow with their own visuals on Unified 
+            This will also be posted for students to follow with their own visuals on Unified
             Classroom and printed out in the classroom. {rlm}[13](RLM)
         - teacher_role: >
             Teacher will show students:
@@ -86,17 +86,17 @@ plan_for_instruction:
             Duplicating
         - teacher_role: >
             Draw your own Sprite/ Find and upload a picture from google
-            Teacher will model creating Scratch with an underlying math concept. 
+            Teacher will model creating Scratch with an underlying math concept.
         - teacher_role: >
-            Each type of block used in Scratch today will be printed so students can use them 
+            Each type of block used in Scratch today will be printed so students can use them
             to make the algorithms with their partner as the teacher codes the visual in Scratch.
         - teacher_role: >
-            Model the coding of each part of the word problem. Use a think-aloud to model the 
-            steps. When duplicating, start asking students if they can predict what part of 
+            Model the coding of each part of the word problem. Use a think-aloud to model the
+            steps. When duplicating, start asking students if they can predict what part of
             the algorithm will come next.
         - teacher_role: >
             Ruby:
-            Add Sprite (cat +)- Choose a sprite to represent Ruby. 
+            Add Sprite (cat +)- Choose a sprite to represent Ruby.
             Events: When clicked
             Looks: Say
         - teacher_role: >
@@ -108,7 +108,7 @@ plan_for_instruction:
             Looks: Show
             Motion: Glide to: (Move the cat where you want it positioned. It will show that location in the options.)
         - teacher_role: >
-            Right click on the cat AFTER coding it and click DUPLICATE. Move second cat to 
+            Right click on the cat AFTER coding it and click DUPLICATE. Move second cat to
             where you want it positioned. Switch out Motion: Glide to and put it in a new location.
         - teacher_role: >
             Circle around 3 cats:
@@ -132,10 +132,10 @@ plan_for_instruction:
             Looks: Hide
             Control: Wait 1 second
             Looks: Show
-            Motion: Glide to: (Move the cat where you want it positioned. It will show 
+            Motion: Glide to: (Move the cat where you want it positioned. It will show
             that location in the options.)
         - teacher_role: >
-            Right click on cat AFTER coding it and click DUPLICATE. Move the second cat 
+            Right click on cat AFTER coding it and click DUPLICATE. Move the second cat
             to where you want it positioned. Switch out Motion: Glide to and put it in a new location.
             Do this for all the cats
         - teacher_role: >
@@ -146,10 +146,10 @@ plan_for_instruction:
             Looks: Show
             Motion: Glide to (Do this after you have moved the circle to where you want it positioned.)
         - teacher_role: >
-            Right click and duplicate. Move circle to where you want it and 
+            Right click and duplicate. Move circle to where you want it and
             switch out the Glide to location.
         - teacher_role: >
-            Post teacher example in studio so students can go in and see the algorithms 
+            Post teacher example in studio so students can go in and see the algorithms
             as they make their own. {rlm}[14](RLM)
       differentiation:
         - "Scratch block-code images allows students to have a hands-on approach before trying out the coding on the computer. "
@@ -162,7 +162,7 @@ plan_for_instruction:
             to start coding your problem with the
             Scratch block-coding images you have in front of you.
           student_role: >
-            Students are working together to code their visual of the word problem they solved in lesson 2. They are using 
+            Students are working together to code their visual of the word problem they solved in lesson 2. They are using
             hands-on visuals and are NOT logged into Scratch yet. {rlm}[15](RLM)
           check_for_understanding: >
             Are students using algorithms correctly to code the characters in their word problems?
@@ -171,10 +171,10 @@ plan_for_instruction:
           check_for_understanding: >
             Do the visuals they are making match their word problems?
         - teacher_role: >
-            Think about how your visual differs from mine. Will you need to duplicate more times than I did? How many 
+            Think about how your visual differs from mine. Will you need to duplicate more times than I did? How many
             groups will you need? What types of sprites will you use?
           student_role: >
-            If students have correctly coded their word problem visual before the allotted time, have them practice 
+            If students have correctly coded their word problem visual before the allotted time, have them practice
             signing into Scratch, so they are ready for the next lesson.
         - teacher_role: >
             Teacher is circulating the classroom and helping students where they might need it. {rlm}[15](RLM)
@@ -202,37 +202,35 @@ plan_for_instruction:
 
         - teacher_role: >
             What was difficult about this process? {rlm}[16](RLM)
-6
       differentiation:
         - "Sentence starters:"
         - "My visual matched the word problem because…"
         - "Making the algorithm was easy/difficult for us because…"
-        - "I struggled with…" 
+        - "I struggled with…"
         - "I understood…"
 
 rlms:
-  rlm11: 
+  rlm11:
     - >
       Prior to start of the lesson, send students their Scratch login information through... PROGRAM TBD (DOJO/TEAMS?)
-  rlm12: 
+  rlm12:
     - >
       In a whole class Zoom session, screen share the visual of the word problem from the previous lesson.
-  rlm13: 
+  rlm13:
     - >
       Post the PowerPoint visuals to show the coding of each aspect of the visual on Schoology.
-  rlm14: 
+  rlm14:
     - >
       Teacher- Share screen to model representing the word problem visually through an algorithm on Scratch.
     - >
       Students- Follow along with the teacher model representing the word problem visually through paper coding blocks
-  rlm15: 
+  rlm15:
     - >
-      Utilize breakout rooms to allow pairs of students to work together to code their visual of the word problem they 
+      Utilize breakout rooms to allow pairs of students to work together to code their visual of the word problem they
       solved in lesson 2 (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
-  rlm16: 
+  rlm16:
     - >
       In a whole class Zoom session, discuss follow-up questions for partners
-  rlm17: 
+  rlm17:
     - >
       Post the Computer Science Vocabulary Graphic Organizer for students to access on your preferred application (Schoology, Teams, etc.).
-  
