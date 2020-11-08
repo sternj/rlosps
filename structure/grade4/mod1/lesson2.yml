@@ -1,0 +1,151 @@
+---
+DLCS:
+  - "3-5.CT.a.2 Organize information in different ways to make it more useful/relevant."
+  - "3-5.CT.b.1 Define an algorithm as a sequence of instructions that can be processed by a computer."
+  - "3-5.CT.d.1 Individually and collaboratively create, test, and modify a program in a graphical environment (e.g., block-based visual programming language)."
+  - "3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors."
+
+content_standards:
+  - name: CCSS.MATH.CONTENT.4.OA.A.1
+    text: >
+      Interpret a multiplication equation as a comparison, e.g., 
+      interpret 35 = 5 × 7 as a statement that 35 is 5 times as many as 7 and 7 times as many as 5. 
+      Represent verbal statements of multiplicative comparisons as multiplication equations.
+  - name: CCCS.MATH.CONTENT.4.OA.A.2
+    text: >
+      Multiply or divide to solve word problems involving multiplicative comparison, 
+      e.g., by using drawings and equations with a symbol for the unknown number to 
+      represent the problem, distinguishing multiplicative comparison from additive comparison
+objectives_goals:
+  - Students will solve a multiplicative comparison word problem.
+  - Students will create an algorithm on paper to represent and understand a multiplicative comparison word problem.
+
+knowledge:
+  label: "Students should know..."
+  items:
+    - Students should know that a multiplicative comparison word problem is a comparison problem where you need to multiply or divide to solve.
+    - Students should know how to create a visual to represent a word problem
+
+skills:
+  label: "Students should be able to..."
+  items:
+    - Students should be able to use 3 reads from Ready Math to solve a word problem.
+    - Students should be able to relate a sequence of events in a word problem toa sequence of events in an algorithm.
+
+essential_questions:
+  - How can we use visual models to represent multiplicative comparison word problems?
+  - How do visuals help us better understand and then solve multiplicative comparison word problems?
+
+plan_for_instruction:
+  teacher_role_label: "What is the teacher doing?"
+  student_role_label: "What are the students doing?"
+  check_for_understanding_label: "Checks for Understanding"
+  horiz_sections:
+    - teacher_role
+    - student_role
+    - check_for_understanding
+  sections:
+    - name: Crafting
+      rows:
+        - teacher_role: >
+            Teacher will model breaking apart a simple multiplicative comparison word probing using the 3-reads organizer based on Ready Math.
+          student_role: Tracking teacher.
+          check_for_understanding: Can students find the important information in the word problem?
+        - teacher_role: >
+            Ruby has 3 cats. Jane has 2 times as many cats as Ruby. How many cats does Jane have?
+          student_role: Participating in conversation about the word problem and helping teacher fill in organizer and solve.
+          check_for_understanding: Can students make an equation to match the word problem?
+        - teacher_role: >
+            First Read: Write a movie title for the problem. Involve the students and have them share out titles they came up with for the problem.
+          student_role: >
+            T&T with sentence starters-
+            What are we trying to find out?
+          check_for_understanding: Can students figure out whether to multiply or divide to solve?
+        - teacher_role: >
+            Second Read: Fill in what we are trying to find and write a target sentence answering the question. (How many cats does Jane have? Jane has ___ cats.)
+          student_role: What is the important information in the problem?
+        - teacher_role: >
+            Third Read: Fill in important information from the problem to help us solve (Ruby has 3 cats. Jane has 2 times as many cast as Ruby.)
+          student_role: What equation will match the word problem?
+        - teacher_role: Have students help throughout this process. T&T about the problem and share out to help fill in the organizer.
+          student_role: Are we going to multiply or divide to solve?
+        - teacher_role: >
+            Focus on visualizing the problem.
+            Draw Ruby with her 3 cats.
+            Think out loud: If Jane has 2 times as many cats as Ruby, who has more cookies? Jane. Let's write an equation that goes with this problem:
+            2 X R = J
+            Should we multiply or divide to solve?
+            Draw Jane and represent 2 times as many by drawing 2 circles for the groups. Draw 3 cats in each group. Count how many cats Jane has and solve by multiplying 2 X 3 = 6.
+            Fill in the target sentence we made in the beginning. Jane has 6 cats. {rlm}[7](RLM)
+
+        - teacher_role: Remind students that they will be creating their visual on Scratch in the following lesson.
+      differentiation:
+        - "Sentence starters for T&T discussion"
+        - "Students have their own organizer to fill out along with teacher, and then take it back to their seats to serve as an exemplar"
+        - "Visual example of what students are expected to do next"
+        - "Have students work in project partners on the rug so they can discuss and help each other through the problem"
+        - "Allow students to write in native language if they cannot write in English. "
+
+    - name: Composing Meaning
+      rows:
+        - teacher_role: >
+            Give each pair of students one word problem from the Fluency and Skills practice pages to solve and visualize.
+          student_role: Students will get their own word problem to solve using the organizer the teacher used previously to model the word problem.
+          check_for_understanding: Can students find the important information in the word problem?
+        - teacher_role: Present students with Scratch Project checklist. They will be able to see what will be expected of them to complete the project. Check off today’s tasks and look ahead.
+          student_role: Once solved, students will draw out a visual of their word problem on blank white paper.
+          check_for_understanding: Can students make an equation to match the word problem?
+        - teacher_role: Walking around monitoring student conversation and work
+          student_role: Students will have criteria for success (posted on anchor chart) to make sure they complete all steps
+          check_for_understanding: Can students figure out whether to multiply or divide to solve?
+        - teacher_role: Asking guiding questions.
+          student_role: 1. Read 3 times and fill in what you need to find, what is important, and a target sentence.
+          check_for_understanding: Are students drawing visuals that represent the problem correctly?
+        - teacher_role: Talk with groups about their plan to visualize the problem. Pull small groups of students if they are having trouble. {rlm}[8](RLM)
+          student_role: 2. Write an equation to help you solve using a variable.
+          check_for_understanding: Are students working together collaboratively? (or is one student doing all the work?)
+
+        - student_role: >
+            3. Decide whether you will multiply or divide.
+            4. Draw a visual to represent your problem that you will recreate on Scratch, be creative!
+            5. Solve equation and fill in target sentence with an answer
+      differentiation:
+        - "Pull small group of EL or SPED students to read the problem aloud and fill out the organizer together"
+        - "Pair students intentionally so one student may read the problem and discuss if another student needs more support."
+        - "Sentence stems for filling in organizer."
+        - "Exemplar organizer from teacher lesson to refer to"
+
+    - name: Processing
+      rows:
+        - teacher_role: >
+            Refer to essential question: How does making a visual help us solve a multiplicative comparison word problem?
+          check_for_understanding: Did students use the visual to solve or was it an extra piece?
+        - teacher_role: Have students share out their experiences with solving the problem and making a visual.
+          student_role: Share out ideas about how they solved the problem and if the visual helped them or not.
+        - teacher_role: >
+            Was it difficult to draw a picture of the problem? If so, what made it difficult? (Possible answers: too many objects to draw – ex. 45 stars)
+          student_role: Share out struggles and successes in the process
+        - teacher_role: Did your visual help you solve the problem? {rlm}[9](RLM)
+          student_role: Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer. {rlm}[10](RLM)
+
+      differentiation:
+        - "Sentence starters for sharing out:"
+        - "My partner and I struggled with…"
+        - "My partner and I did well with…"
+        - "It was easy to…"
+        - "It was difficult to…"
+
+rlms:
+  rlm7: 
+    - >
+      In a whole class Zoom session, screen share the word problem.
+      Engage students using the three-reads organizer from Ready Math. Students will answer questions to help fill in the organizer.
+      Screen share the Zoom whiteboard to model how to represent the word problem visually.
+  rlm8: 
+    - >
+      Post the word problems from the Fluency and Skills practice page and Scratch checklist for students to access on your preferred application (Schoology, Teams, etc.). Assign student pairs to a different word problem.
+      Utilize breakout rooms to allow pairs of students to switch algorithms on a shared Microsoft Word document (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
+  rlm9: 
+    - In a whole class Zoom session, discuss algorithms and group work.
+  rlm10: 
+    - Post the Computer Science Vocabulary Graphic Organizer for students to access on your preferred application (Schoology, Teams, etc.).

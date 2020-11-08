@@ -1,0 +1,99 @@
+{% extends "_base.html.jinja2" %}
+{% block content %}
+  <!-- Header -->
+  <div class="jumbotron">
+    <h1 class="display-4">{{ module_name }}</h1>
+    {% for lesson in lessons %}
+        <a href="{{ lesson.name }}.html" class="btn btn-primary" role="button">{{ lesson.name }}</a>
+    {% endfor %}
+  </div>
+<div class="container">
+    <h2>DLCS standards</h2>
+    <ul> {% for obj in lesson.dlcs %}
+        <li>{{ obj }}</li>
+    {% endfor %}
+    </ul>
+    <h2>Plan for instruction</h2>
+
+    <div id="accordion">
+        {% for section in lesson.plan_for_instruction.sections %}
+
+            <div class="card">
+                <div class="card-header" id="heading{{ loop.index }}">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ loop.index }}"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            {{ section.name }}
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">{{ lesson.plan_for_instruction.teacher_role_label }}</div>
+                                <div class="col">{{ lesson.plan_for_instruction.student_role_label }}</div>
+                                <div class="col">{{ lesson.plan_for_instruction.check_for_understanding_label }}</div>
+                            </div>
+                            {% for item in section.rows %}
+                                <div class="row">
+                                    {% for section in lesson.plan_for_instruction.horiz_sections %}
+                                        <div class="col">
+                                            {% if section in item %}
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        {{ item[section] | sanitize }}
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+        {# RLM section #}
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRlm" aria-expanded="true"
+                            aria-controls="collapseRlm">
+                        Remote Learning Modifications
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseRlm" class="collapse" aria-labelledby="headingRlm" data-parent="#accordion">
+                <div class="card-body">
+                    {% for rlm in lesson.rlms %}
+                        <div class="card" id="{{ rlm }}">
+                            <div class="card-header">
+                                <h1>{{ rlm }}</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    {% for rlmli in lesson.rlms[rlm] %}
+                                        <li>{{ rlmli }}</li>
+                                    {% endfor %}
+                                </ul>
+                                <a href="#{{ rlm }}-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    {% endfor %}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,129 @@
+---
+DLCS:
+  - 3-5.CT.a.2 Organize information in different ways to make it more useful/relevant.
+  - 3-5.CT.b.1 Define an algorithm as a sequence of instructions that can be processed by a computer.
+  - 3-5.CT.d.1 Individually and collaboratively create, test, and modify a program in a graphical environment (e.g., block-based visual programming language).
+  - 3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors.
+  - 3-5.CAS.a.4 Explain the proper use and operation of security technologies (e.g., passwords, virus protection software, spam filters, popup blockers, cookies).
+  - 3-5.CAS.b.1 Demonstrate responsible use of computers, peripheral devices, and resources as outlined in school rules [Acceptable Use Policy (AUP)]. 
+
+content_standards:
+  - name: CCSS.MATH.CONTENT.4.OA.A.1
+    text: > 
+      Interpret a multiplication equation as a comparison, e.g., 
+      interpret 35 = 5 × 7 as a statement that 35 is 5 times as many 
+      as 7 and 7 times as many as 5. Represent verbal statements of multiplicative comparisons as multiplication equations.
+  - name: CCSS.MATH.CONTENT.4.OA.A.2
+    text: >
+      Multiply or divide to solve word problems involving multiplicative comparison, e.g., by using drawings and equations
+      with a symbol for the unknown number to represent the problem, distinguishing multiplicative comparison from additive comparison.
+
+objectives_goals:
+  - Students will create algorithms using block-based coding on Scratch to code a visual of a multiplicative comparison word problem. 
+  - Students will use inquiry to explore and learn about visual block-based coding. 
+
+knowledge:
+  label: "Students should know..."
+  items:
+    - Students should know how to solve and make a visual for a multiplicative comparison word problem.
+    - Students should know how to make an algorithm using block-based coding on Scratch.
+
+skills:
+  label: "Students should be able to..."
+  items:
+    - Students should be able to login to Scratch.
+    - Students should be able to create and title a new project in Scratch.
+    - Students should be able to share a project and add it to a studio in Scratch.
+
+
+rlms:
+  rlm18:
+    - In whole class Zoom session, discuss computer rules for home use, discuss the importance of a password, and prepare students to create their final Scratch projects.
+    - Utilize breakout rooms to allow pairs of students to work together to create their final Scratch projects (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
+  rlm19:
+    - Utilize breakout rooms to allow pairs of students to work together to create their final Scratch projects (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
+  rlm20:
+    - In whole class Zoom session, model how to upload projects into the Scratch studio or provide a video tutorial
+  rlm21:
+    - In a whole class Zoom session, discuss reflection questions.
+
+plan_for_instruction:
+  teacher_role_label: "What is the teacher doing?"
+  student_role_label: "What are the students doing?"
+  check_for_understanding_label: "Checks for Understanding"
+  horiz_sections:
+    - teacher_role
+    - student_role
+    - check_for_understanding
+  sections:
+    - name: Crafting
+      rows: 
+        - teacher_role: Today, you will begin creating your final product on Scratch using the word problem visuals you created in the past lessons.
+          student_role: Students should be sitting with their partner and gathering all materials from past lessons.
+          check_for_understanding: Observe students as they get started- make sure they have everything they need.
+        - check_for_understanding: Are students able to get right to work and login to Scratch on their own?
+        - teacher_role: "Digital Citizenship Content Talking Point: Before we use our computers, I want to assure that we all know the expectations for using computers in our classroom."
+          student_role: Students will turn and talk to discuss the Digital Citizenship Content Talking point before using their computers.
+        - teacher_role: Have students T &T- What are some expectations that we should follow while using our computers? What does it look like?
+          student_role: Students can use the visual of computer expectations created to remind them of how they should be using/treating their computers.
+        - teacher_role: Come back together and discuss as a class.
+          student_role: Students have the option to work on one computer and create one visual or share the visual and work together but create two separate projects in Scratch. (This allows them to be more creative if they want to use different sprites, etc.)
+        - teacher_role: Create a visual of the computer expectations (e.g., anchor chart, copy of expectations in CS folder, etc.) to allow students to have access throughout the plugged lessons.
+        - teacher_role: Digital Citizenship Talking Point- Now that we know our expectations for using our computers in the classroom, we can login to Scratch. When we are logging in, what are the two things that we need to do so? You’re right! We need to input our username and password.
+          student_role: Students will turn and talk to discuss the Digital Citizenship Talking Point about the importance of having a secure password and not sharing their passwords with others.
+        - teacher_role: Have students T & T- Why do we need passwords? How do you create a secure password? Why should you keep your password a secret?
+        - teacher_role: Come back together and discuss as a class.
+          student_role: Students should take out their checklist, so they make sure they complete each requirement. {rlm}[18](RLM)
+
+        - teacher_role:  > 
+            Make sure students: 
+            1. Title Project: Team Names- Word Problem Visual
+            2. Create algorithm for each character/object in word problem.
+            3. Type word problem into notes section of project.
+            4. Share.
+            5. Upload into Class Project Studio page.
+            {rlm}[18](RLM)
+      differentiation:
+        - PowerPoint available on Unified Classroom or Teams to refer to.
+        - Anchor charts from previous lessons posted.
+        - Scratch block images for more hands-on students.
+        - Small groups based on observations from previous lesson.
+    - name: Composing Meaning
+      rows: 
+        - teacher_role: Teacher will circulate the classroom helping groups where needed.
+          student_role: Students are working on their final product in Scratch.
+          check_for_understanding: Are students able to log onto Scratch?
+        - teacher_role: Teacher will pull small groups as needed. {rlm}[19](RLM)
+          student_role: Example of a student final project
+          check_for_understanding: Are students coding their visuals correctly?
+        - student_role: "Word problem visualized: There are 7 pear trees on farm. There are 7 times as many apple trees as pear trees. How many apple trees are on the farm?"
+          check_for_understanding: Are students working together or independently?
+      differentiation:
+        - PowerPoint available on Unified Classroom or Teams to refer to.
+        - Anchor charts from previous lessons posted.
+        - Scratch block images for more hands-on students.
+        - Small groups based on observations from previous lesson.
+    - name: Processing
+      rows:
+        - teacher_role: Teacher should model how to upload projects into the Scratch Studio. {rlm}[20](RLM)
+          check_for_understanding: Listen for what students found beneficial vs challenging about the project.
+
+        - student_role: Students turn and talk about reflection questions and share out {rlm}[21](RLM)
+        - teacher_role: "Teacher asks students reflection questions at the end of the lesson, such as:"
+          check_for_understanding: Listen for ways to improve the project for next year’s class.
+        - teacher_role: How was the experience of creating a word problem on Scratch? 
+        - teacher_role: Was working with a partner helpful? 
+        - teacher_role: What are the benefits of using Scratch to represent word problems? 
+        - teacher_role: How could this project be improved?
+        - teacher_role: >
+            Digital Citizenship Content Talking Point:
+            Reflection- Have students T & T- Did you use the computers responsibly? What did that look like? If there was anything you could have done better, what would that have been? {rlm}[21](RLM)
+      differentiation:
+      - >
+        Sentence starters:
+        This experience was...
+        Scratch is helpful for representing word problems because...
+        This project could be improved by...
+essential_questions:
+  - How can we use visual models to represent multiplicative comparison word problems?
+  - How do visuals help us better understand and then solve multiplicative comparison word problems?
