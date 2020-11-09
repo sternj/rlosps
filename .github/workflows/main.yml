@@ -36,6 +36,7 @@ jobs:
       - name: Commit files
         run: |
           git checkout -b gh-pages
+          git add docs
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Add changes" -a
