@@ -33,6 +33,8 @@ jobs:
         run: rm config.yml && cp config.production.yml config.yml
       - name: Render files
         run: python3 render.py
+      - name: copy images
+        run: cp -R images docs
       - name: Commit files
         run: |
           git checkout -b gh-pages
