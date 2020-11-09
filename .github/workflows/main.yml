@@ -29,6 +29,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install requirements
         run: pip install -r requirements.txt
+      - name: Move config.yml file
+        run: rm config.yml && cp config.production.yml config.yml
       - name: Render files
         run: python3 render.py
       - name: Commit files
