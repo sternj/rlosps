@@ -178,27 +178,28 @@ def gen_index(structure_dict: dict):
     }
 
 
-@click.command()
-@click.argument('data', callback=validate_extension(['.yml', '.yaml']), required=True)
-@click.option('--template', default='lesson.html.jinja2', callback=validate_extension(['.jinja2']))
-def render_relpath(data, template):
-    current_dir = os.path.dirname(os.path.realpath(__file__))
-    with open(os.path.join(current_dir, data)) as f:
-        lesson = yaml.load(f, Loader=yaml.FullLoader)
-
-    template = template_env.get_template(template)
-    output_text = template.render(
-        dlcs=lesson['DLCS'],
-        plan_for_instruction=lesson['plan_for_instruction'],
-        rlms=lesson['rlms']
-    )
-    output_filename = os.path.join(current_dir, os.path.splitext(data)[0]) + '.html'
-    with open(output_filename, 'w+') as f:
-        f.write(output_text)
+# @click.command()
+# @click.argument('data', callback=validate_extension(['.yml', '.yaml']), required=True)
+# @click.option('--template', default='lesson.html.jinja2', callback=validate_extension(['.jinja2']))
+# def render_relpath(data, template):
+#     current_dir = os.path.dirname(os.path.realpath(__file__))
+#     with open(os.path.join(current_dir, data)) as f:
+#         lesson = yaml.load(f, Loader=yaml.FullLoader)
+#
+#     template = template_env.get_template(template)
+#     output_text = template.render(
+#         dlcs=lesson['DLCS'],
+#         plan_for_instruction=lesson['plan_for_instruction'],
+#         rlms=lesson['rlms']
+#     )
+#     output_filename = os.path.join(current_dir, os.path.splitext(data)[0]) + '.html'
+#     with open(output_filename, 'w+') as f:
+#         f.write(output_text)
 
 
 # if __name__ == '__main__':
 #     render_relpath()
 
 # print(gen_index(load_yml_files('structure')))
-render('structure', 'dest')
+if __name__ == '__main__':
+    render('structure', 'docs')
