@@ -3,7 +3,7 @@
   <!-- Header -->
   <div class="jumbotron">
     <h1 class="display-4">{{ module_name }}</h1>
-    {% for lesson in lessons %}
+    {% for lesson in index.lessons %}
         <a href="{{ lesson.name }}.html" class="btn btn-primary" role="button">{{ lesson.name }}</a>
     {% endfor %}
   </div>

@@ -155,11 +155,11 @@ def gen_index(structure_dict: dict):
     return {
         "grades": [
             {
-                "name": grade_name,
+                "name": grade_dict['grade']['name'],
                 "grade": grade_dict['grade'],
                 "modules": [
                     {
-                        "name": module_name,
+                        "name": module_dict['mod']['name'],
                         "module": module_dict["mod"],
                         "link": f"{grade_name}/{module_name}/index.html",
                         "lessons": [
