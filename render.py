@@ -129,16 +129,16 @@ def render(base_dir, dest_dir):
     # render_directory(base_dir, dest_dir, index)
     render_template('index.html.jinja2', {'index': index}, os.path.join(dest_dir, 'index.html'))
     for grade in index['grades']:
-        os.mkdir(os.path.join(dest_dir, grade['name']))
+        os.mkdir(os.path.join(dest_dir, grade['dir_name']))
         for module in grade['modules']:
-            os.mkdir(os.path.join(dest_dir, grade['name'], module['name']))
+            os.mkdir(os.path.join(dest_dir, grade['dir_name'], module['dir_name']))
             render_template('mod.html.jinja2',
                             {
                                 'index': index,
                                 'module': module['module'],
                                 'lessons': module['lessons']
                             },
-                            os.path.join(dest_dir, grade['name'], module['name'], 'index.html')
+                            os.path.join(dest_dir, grade['dir_name'], module['dir_name'], 'index.html')
                             )
             for lesson in module['lessons']:
                 render_template('lesson.html.jinja2',
@@ -146,7 +146,7 @@ def render(base_dir, dest_dir):
                                     'index': index,
                                     'lesson': lesson
                                 },
-                                os.path.join(dest_dir, grade['name'], module['name'], f'{lesson["name"]}.html'))
+                                os.path.join(dest_dir, grade['dir_name'], module['dir_name'], f'{lesson["name"]}.html'))
 
 
 def gen_index(structure_dict: dict):
@@ -155,11 +155,13 @@ def gen_index(structure_dict: dict):
     return {
         "grades": [
             {
-                "name": grade_dict['grade']['name'],
+                "dir_name": grade_name,
+                "display_name": grade_dict['grade']['name'],
                 "grade": grade_dict['grade'],
                 "modules": [
                     {
-                        "name": module_dict['mod']['name'],
+                        "dir_name": module_name,
+                        "display_name": module_dict["mod"]['name'],
                         "module": module_dict["mod"],
                         "link": f"{grade_name}/{module_name}/index.html",
                         "lessons": [
