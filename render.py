@@ -158,7 +158,7 @@ def gen_index(structure_dict: dict):
         "grades": [
             {
                 "dir_name": grade_name,
-                "display_name": grade_dict['grade']['name'],
+                "display_name": grade_dict['grade']['display_name'],
                 "ord": grade_dict['grade']['ord'],
                 "grade": grade_dict['grade'],
                 "modules": [
