@@ -29,11 +29,11 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink{{ loop.index }}" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                {{ grade.name }}
+                {{ grade.display_name }}
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink{{ loop.index }}">
-                {% for module in grade.modules %}
-                    <a class="dropdown-item" href="{{ index.base_path }}/{{ module.link }}">{{ module.name }}</a>
+                {% for module in grade.modules | sort(attribute='ord')  %}
+                    <a class="dropdown-item" href="{{ index.base_path }}/{{ module.link }}">{{ module.display_name }}</a>
                 {% endfor %}
 {#                <a class="dropdown-item" href="#">Module 1</a>#}
 {#                <a class="dropdown-item" href="#">Module 2</a>#}

@@ -7,6 +7,7 @@ import os
 import yaml
 import re
 import shutil
+from operator import itemgetter
 
 rlm = re.compile(r'\{(rlm)\}\[(\d+)\]\((\w+)\)')
 
@@ -44,7 +45,7 @@ def load_yml_files(base_dir):
                 with open(os.path.join(root, file)) as f:
                     tmp[file] = yaml.load(f, Loader=yaml.FullLoader)
                     tmp[file]['type'] = LESSON_TYPE
-                    tmp[file]['name'] = file.split('.')[0]
+                    tmp[file]['dir_name'] = file.split('.')[0]
         # If we're at the base directory, just enters in all the entries automatically
         if root == base_dir:
             ret.update(tmp)
@@ -63,7 +64,7 @@ def load_yml_files(base_dir):
 
 
 def rlm_img_filter(text):
-    rlmed = re.sub(rlm, r'<a href="#rlm\2" target="_blank" class="accordionLink" id="rlm\2-ref">\3</a>', text)
+    rlmed = re.sub(rlm, r'<a href="#rlm\2" class="accordionLink" id="rlm\2-ref">\3</a>', text)
     imged = re.sub(img, r"<a href=\"\2\" target=\"_blank\">\4</a>", rlmed)
     linked = re.sub(md_link_regex, r'<a href="../../images/\2">\1</a>', imged)
     return linked
@@ -144,9 +145,10 @@ def render(base_dir, dest_dir):
                 render_template('lesson.html.jinja2',
                                 {
                                     'index': index,
-                                    'lesson': lesson
+                                    'lesson': lesson,
+                                    'module': module
                                 },
-                                os.path.join(dest_dir, grade['dir_name'], module['dir_name'], f'{lesson["name"]}.html'))
+                                os.path.join(dest_dir, grade['dir_name'], module['dir_name'], f'{lesson["dir_name"]}.html'))
 
 
 def gen_index(structure_dict: dict):
@@ -157,12 +159,14 @@ def gen_index(structure_dict: dict):
             {
                 "dir_name": grade_name,
                 "display_name": grade_dict['grade']['name'],
+                "ord": grade_dict['grade']['ord'],
                 "grade": grade_dict['grade'],
                 "modules": [
                     {
                         "dir_name": module_name,
-                        "display_name": module_dict["mod"]['name'],
+                        "display_name": module_dict["mod"]['display_name'],
                         "module": module_dict["mod"],
+                        "ord": module_dict["mod"]["ord"],
                         "link": f"{grade_name}/{module_name}/index.html",
                         "lessons": [
                             lesson_dict

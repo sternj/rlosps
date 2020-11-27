@@ -2,7 +2,7 @@
   <!-- Header -->
 {% block content %}
   <div class="jumbotron">
-    <h1 class="display-4">{{ module.name }}</h1>
+    <h1 class="display-4">{{ module.display_name }}</h1>
     <p class="lead">Module Authors: {{ module.authors }}</p>
     <p class="lead">Module Editors: {{ module.editors }}</p>
     <hr class="my-4">
@@ -39,8 +39,8 @@
 
     <!-- Accordion with Lesson info -->
     <h2>Lessons</h2>
-      {% for lesson in lessons %}
-        <a href="./{{ lesson.name }}.html" class="btn btn-primary" role="button">{{ lesson.name }}</a>
+      {% for lesson in lessons | sort(attribute="ord") %}
+        <a href="./{{ lesson.dir_name }}.html" class="btn btn-primary" role="button">{{ lesson.display_name }}</a>
       {% endfor %}
 {#    <a href="mod1/lesson1.html" class="btn btn-primary" role="button">Lesson 1</a>#}
 {#    <a href="mod1/lesson2.html" class="btn btn-primary" role="button">Lesson 2</a>#}
