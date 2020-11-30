@@ -1,0 +1,159 @@
+---
+display_name: Lesson 5
+ord: 4
+DLCS:
+  - "3-5.CT.a.2 Organize information in different ways to make it more useful/relevant."
+  - "3-5.CT.b.1 Define an algorithm as a sequence of instructions that can be processed by a computer."
+  - "3-5.CT.d.1 Individually and collaboratively create, test, and modify a program in a graphical environment (e.g., block-based visual programming language)."
+  - "3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors."
+
+content_standards:
+  - name: CCSS.MATH.CONTENT.4.OA.A.1
+    text: >
+      Interpret a multiplication equation as a comparison, e.g., interpret 35 = 5 × 7 as a statement that 35 is 5 times as many as 7 and 7 times as many as 5.
+      Represent verbal statements of multiplicative comparisons as multiplication equations.
+  - name: CCSS.MATH.CONTENT.4.OA.A.2
+    text: >
+      Multiply or divide to solve word problems involving multiplicative comparison, e.g., by using
+      drawings and equations with a symbol for the unknown number to represent the problem,
+      distinguishing multiplicative comparison from additive comparison.
+objectives_goals:
+  - Students will use their knowledge of multiplicative comparison word problems and block-based coding to critique and debug the algorithm of another student’s work.
+
+knowledge:
+  label: "Students should know..."
+  items:
+    - Students should know how to solve a multiplicative comparison word problem.
+    - Students should know how to code an algorithm on Scratch.
+    - Students should know how to debug an incorrect algorithm.
+    - Students should know how to analyze another student’s math work.
+
+skills:
+  label: "Students should be able to..."
+  items:
+    - Students should be able to login to Scratch.
+    - Students should be able to look at a project on Scratch from another student.
+    - Students should be able to critique the reasoning of others.
+
+essential_questions:
+  - How can we use visual models to represent multiplicative comparison word problems?
+  - How do visuals help us better understand and solve multiplicative comparison word problems?
+
+plan_for_instruction:
+  teacher_role_label: "What is the teacher doing?"
+  student_role_label: "What are the students doing?"
+  check_for_understanding_label: "Checks for Understanding"
+  horiz_sections:
+    - teacher_role
+    - student_role
+    - check_for_understanding
+  sections:
+    - name: Crafting
+      rows:
+        - teacher_role: >
+            Review what we have done in the past 3 lessons: 1. Solved multiplicative comparison problem with a partner and drew a visual to match. 2. Learned how to use Scratch to create a visual for a word problem. 3. Spent 2 days creating a visual of that word problem on Scratch.
+          student_role: >
+            Students recap what they have learned in Scratch and about multiplicative comparison word problems. Students T&T about how they will know if the visual correctly matches the word problem.
+          check_for_understanding: >
+            Can students recap what they have learned so far? Do students understand that they must first solve the problem themselves before critiquing the work of another group?
+        - teacher_role: >
+            Today, we will be sharing our finished projects with another group. Partners will review their word problem and visual to decide if it correctly represents the problem.
+        - teacher_role: >
+            Ask: What might you have to do with your partner BEFORE you can decide if the visual is correct? (Solve the problem yourself.)
+        - teacher_role: >
+            You will need to solve the problem on your own first before you can decide if the visual is correct.
+        - teacher_role: >
+            After you have determined if the visual is correct or incorrect, you will look at the coding of the visual to see if there is any “debugging” or correcting that needs to happen within the algorithms. {rlm}[22](RLM)
+        - teacher_role: >
+            Computer Science Content Talking Point:
+            Have students T &T- How do you fix something that is not working?
+            Do you follow a certain series of steps?
+            Come back together and discuss as a class.
+            Sometimes our steps do not work, and we need to problem-solve to find out how we can fix our algorithms. We are going to see if other groups have accurately sequenced their algorithms. If something does not work the way we predict it was going to, we will have to debug and try again.
+          student_role: >
+            Students will turn and talk to discuss the Computer Science Talking Point about the importance of how debugging will work today.
+      differentiation:
+        - T&T sentence stems for partners.
+        - Vocabulary and anchor charts from previous lessons posted to refer to.
+
+    - name: Composing Meaning
+      rows:
+        - teacher_role: >
+            Purposefully picking groups to trade with each other.
+          student_role: >
+            Students will trade word problems with another group and get 5-10 minutes to solve the problem on their own.
+          check_for_understanding: >
+            Can partners solve the other pair’s multiplicative comparison word problem correctly?
+        - teacher_role: >
+            Possible ways to pair:
+            Multiplication and division
+            Same operation
+            Students who struggled/ Students who excelled
+          student_role: >
+            Students will then review the Scratch visual made by the other group and decide if the visual matches or not.
+          check_for_understanding: >
+            Can they identify whether the visual correctly matches the problem?
+        - teacher_role: >
+            Walk around and monitor student groups. Ask guiding questions if groups are struggling.
+          student_role: >
+            They will have a handout where they will solve on one side, and answer whether the visual matches or not on the other side with sentence starters:
+            The visual made on Scratch matches the word problem because.....
+            The visual made on Scratch does not match the word problem because....
+            One thing that this group did well with making the Scratch visual was...
+            One thing that would make the Scratch visual better is....
+          check_for_understanding: >
+            Are they using computer science vocabulary in their explanations and discussions? {rlm}[23](RLM)
+      differentiation:
+        - Read aloud for students who need it.
+        - Sentence starters for paper and discussion.
+        - Pull groups who struggled or are struggling to small group and guide them through the process.
+
+    - name: Processing
+      rows:
+        - teacher_role: >
+            Give students time to get with partners they switched problems with and discuss what they both found.
+          student_role: >
+            Students are bringing their work and critique of the other partner’s Scratch to discuss what they found.
+          check_for_understanding: >
+            Are students correct in their reasoning?
+        - teacher_role: >
+            Walk around and listen to discussions.
+          check_for_understanding: >
+            Are students using vocabulary while explaining?
+        - teacher_role: >
+            Come back together as a full group after teams have had time to discuss.
+        - teacher_role: >
+            Share out: Teams who thought the Scratch DID match- Project the visual and word problem on the board to show an example of this.
+          student_role: >
+            Students are sharing out their thinking with the class using the handout they filled in from before.
+          check_for_understanding: >
+            Can students explain how to fix coding that is incorrect?
+        - teacher_role: >
+            Teams who thought the Scratch did NOT match- Project and have team explain their thinking.
+          student_role: >
+            If any students got this far, they could show how they fixed the coding to fix mistakes in the Scratch visuals.
+        - teacher_role: >
+            Have students share out ideas on how to fix visuals that did not match up with the word problem. {rlm}[24](RLM)
+          student_role: >
+            If time allows, let groups go back and try to fix coding if their visual was not accurate. {rlm}[25](RLM)
+      differentiation:
+        - Bring work from groups to the rug.
+        - Sentence starters for sharing out.
+        - Allow partners to talk in groups before sharing out with the class.
+      assessment:
+        - "Informal: Students were successful if they were able to explain their reasoning for whether the visual matched the word problem using both content vocabulary and computer science vocabulary."
+        - "Formal: Students were successful if they were able to correctly solve the multiplicative comparison word problem and give a written explanation of whether the visual matched and why."
+
+rlms:
+  rlm22:
+    - >
+      In a whole class Zoom session, discuss what we have learned in the past few lessons about multiplicative comparisons, Scratch, and creating visuals for word problems. Explain that partners will be sharing their final projects with another pair and decide if their visual created in Scratch correctly represents the word problem.
+  rlm23:
+    - >
+      Utilize breakout rooms to allow partners to share their final Scratch projects with another pair of students (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
+  rlm24:
+    - >
+      In a whole class Zoom session, have students share out about Scratch projects that matched and did not match the word problem
+  rlm25:
+    - >
+      Utilize breakout rooms to allow partners to fix their coding if the visual was not accurate (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
