@@ -25,14 +25,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-          {% for grade in index.grades %}
+          {% for grade in index.grades | sort(attribute='ord') %}
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink{{ loop.index }}" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 {{ grade.display_name }}
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink{{ loop.index }}">
-                {% for module in grade.modules | sort(attribute='ord')  %}
+                {% for module in grade.modules | sort(attribute='ord') %}
                     <a class="dropdown-item" href="{{ index.base_path }}/{{ module.link }}">{{ module.display_name }}</a>
                 {% endfor %}
 {#                <a class="dropdown-item" href="#">Module 1</a>#}
