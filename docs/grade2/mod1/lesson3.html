@@ -1,0 +1,1090 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/rlosps">CSforAll Module Repository
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 2
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod1/index.html">Module 1</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod2/index.html">Module 2</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod3/index.html">Module 3</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 3
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                
+                    <a class="dropdown-item" href="/rlosps/grade3/mod1/index.html">Module 1</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade3/mod2/index.html">Module 2</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 4
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                
+                    <a class="dropdown-item" href="/rlosps/grade4/mod1/index.html">Module 1</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </nav>
+
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+          $('a[href*="#"].accordionLink').click(function (e) {
+            e.preventDefault()
+            let linkId = $.attr(this, 'href')
+            console.log(linkId)
+            $(linkId).closest('.collapse').collapse('show')
+              setTimeout(function () {
+                window.location = linkId
+              }, 300)
+          })
+        })
+
+
+    </script>
+  <!-- Header -->
+  <div class="jumbotron">
+    <h1 class="display-4">Module 1</h1>
+    
+        <a href="./lesson1.html" class="btn btn-primary" role="button">Lesson 1</a>
+    
+        <a href="./lesson2.html" class="btn btn-primary" role="button">Lesson 2</a>
+    
+        <a href="./lesson3.html" class="btn btn-primary" role="button">Lesson 3</a>
+    
+        <a href="./lesson4.html" class="btn btn-primary" role="button">Lesson 4</a>
+    
+        <a href="./lesson5.html" class="btn btn-primary" role="button">Lesson 5</a>
+    
+  </div>
+<div class="container">
+    <h2>DLCS standards</h2>
+    <ul> 
+        <li>3-5.CT.a.2 Organize information in different ways to make it more useful/relevant.</li>
+    
+        <li>3-5.CT.b.1 Define an algorithm as a sequence of instructions that can be processed by a computer.</li>
+    
+        <li>3-5.CT.d.1 Individually and collaboratively create, test, and modify a program in a graphical environment (e.g., block-based visual programming language).</li>
+    
+        <li>3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors.</li>
+    
+    </ul>
+    <h2>Plan for instruction</h2>
+
+    <div id="accordion">
+        
+
+            <div class="card">
+                <div class="card-header" id="heading1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Crafting
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher: In the previous lesson, you saw an example of a word problem and used the three reads routine to solve the problem.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        During this process, students may want to sit with their partner.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Today we will teach the major controls of Scratch that students will utilize
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students can sit at the rug, spread out, or sit at their seats together,
+ if they can see the board.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher will review the visual of the word problem modeled in the previous lesson:
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        After teacher introduces the tools, students will turn and talk about how they might want to use these tools.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher observation while students are turning and talking.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Ruby has 3 cats. Jane has 2 times as many cats as Ruby. How many cats does Jane have? <a href="#rlm12" class="accordionLink" id="rlm12-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will have Scratch block-code visuals that they may use to follow along with the teacher’s coding on the board.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are students able to follow along and make the same algorithms as the teacher?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        PowerPoint visuals are attached to show the coding of each aspect of the visual. This will also be posted for students to follow with their own visuals on Unified Classroom and printed out in the classroom. <a href="#rlm13" class="accordionLink" id="rlm13-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher will show students: Add new sprite Events- control-wait Looks- Hide, show, say Motion- Glide, Placement Grouping Duplicating
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Draw your own Sprite/ Find and upload a picture from google Teacher will model creating Scratch with an underlying math concept.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Each type of block used in Scratch today will be printed so students can use them to make the algorithms with their partner as the teacher codes the visual in Scratch.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Model the coding of each part of the word problem. Use a think-aloud to model the steps. When duplicating, start asking students if they can predict what part of the algorithm will come next.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Ruby: Add Sprite (cat +)- Choose a sprite to represent Ruby. Events: When clicked Looks: Say
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Ruby’s 3 cats: Add sprite: Choose sprite to represent cat Events: When Flag Clicked Looks: Hide Control: Wait 1 second Looks: Show Motion: Glide to: (Move the cat where you want it positioned. It will show that location in the options.)
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Right click on the cat AFTER coding it and click DUPLICATE. Move second cat to where you want it positioned. Switch out Motion: Glide to and put it in a new location.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Circle around 3 cats: Add sprite: Choose draw. Use shape to draw a circle. Make no fill inside. Events: When flag clicked Looks: Hide Control: Wait 2 seconds Looks: Show Motion: Glide to (Do this after you have moved the circle where you want it.)
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Jane: Add sprite- Choose a sprite to represent Jane. Events: When flag clicked Control: Wait 3 seconds Looks: Say “____” for 2 seconds Control: Wait 2 seconds Looks: Say “_____” for 2 seconds
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Jane’s Cats: Events: When Flag Clicked Looks: Hide Control: Wait 1 second Looks: Show Motion: Glide to: (Move the cat where you want it positioned. It will show that location in the options.)
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Right click on cat AFTER coding it and click DUPLICATE. Move the second cat to where you want it positioned. Switch out Motion: Glide to and put it in a new location. Do this for all the cats
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Circle around Jane’s groups of 3 cats: Events: When flag clicked Looks: Hide Control: Wait 2 seconds Looks: Show Motion: Glide to (Do this after you have moved the circle to where you want it positioned.)
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Right click and duplicate. Move circle to where you want it and switch out the Glide to location.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Post teacher example in studio so students can go in and see the algorithms as they make their own. <a href="#rlm14" class="accordionLink" id="rlm14-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-header" id="heading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Composing Meaning
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Tell students: You are going to use the word problem you solved yesterday as well as the visual you made yesterday to start coding your problem with the Scratch block-coding images you have in front of you.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students are working together to code their visual of the word problem they solved in lesson 2. They are using hands-on visuals and are NOT logged into Scratch yet. <a href="#rlm15" class="accordionLink" id="rlm15-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are students using algorithms correctly to code the characters in their word problems?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Make sure you can make an algorithm for each person or object in your word problem.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Do the visuals they are making match their word problems?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Think about how your visual differs from mine. Will you need to duplicate more times than I did? How many groups will you need? What types of sprites will you use?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        If students have correctly coded their word problem visual before the allotted time, have them practice signing into Scratch, so they are ready for the next lesson.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher is circulating the classroom and helping students where they might need it. <a href="#rlm15" class="accordionLink" id="rlm15-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Processing
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher asks follow-up questions for partners to discuss:
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students discuss questions with partners and share out.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        What was difficult for students that needs to be addressed as they start coding on Scratch in the next lesson?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Looking back, did your visual make sense and match your word problem?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer. <a href="#rlm17" class="accordionLink" id="rlm17-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Which groups really struggled and might need to be pulled for a small group in the next lesson?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        What was difficult about this process? <a href="#rlm16" class="accordionLink" id="rlm16-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRlm" aria-expanded="true"
+                            aria-controls="collapseRlm">
+                        Remote Learning Modifications
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseRlm" class="collapse" aria-labelledby="headingRlm" data-parent="#accordion">
+                <div class="card-body">
+                    
+                        <div class="card" id="rlm11">
+                            <div class="card-header">
+                                <h1>rlm11</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Prior to start of the lesson, send students their Scratch login information through... PROGRAM TBD (DOJO/TEAMS?)
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm11-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm12">
+                            <div class="card-header">
+                                <h1>rlm12</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In a whole class Zoom session, screen share the visual of the word problem from the previous lesson.
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm12-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm13">
+                            <div class="card-header">
+                                <h1>rlm13</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Post the PowerPoint visuals to show the coding of each aspect of the visual on Schoology.
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm13-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm14">
+                            <div class="card-header">
+                                <h1>rlm14</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Teacher- Share screen to model representing the word problem visually through an algorithm on Scratch.
+</li>
+                                    
+                                        <li>Students- Follow along with the teacher model representing the word problem visually through paper coding blocks
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm14-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm15">
+                            <div class="card-header">
+                                <h1>rlm15</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Utilize breakout rooms to allow pairs of students to work together to code their visual of the word problem they solved in lesson 2 (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm15-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm16">
+                            <div class="card-header">
+                                <h1>rlm16</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In a whole class Zoom session, discuss follow-up questions for partners
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm16-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm17">
+                            <div class="card-header">
+                                <h1>rlm17</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Post the Computer Science Vocabulary Graphic Organizer for students to access on your preferred application (Schoology, Teams, etc.).
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm17-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>

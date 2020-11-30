@@ -1,0 +1,799 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/rlosps">CSforAll Module Repository
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 2
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod1/index.html">Module 1</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod2/index.html">Module 2</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod3/index.html">Module 3</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 3
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                
+                    <a class="dropdown-item" href="/rlosps/grade3/mod1/index.html">Module 1</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade3/mod2/index.html">Module 2</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 4
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                
+                    <a class="dropdown-item" href="/rlosps/grade4/mod1/index.html">Module 1</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </nav>
+
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+          $('a[href*="#"].accordionLink').click(function (e) {
+            e.preventDefault()
+            let linkId = $.attr(this, 'href')
+            console.log(linkId)
+            $(linkId).closest('.collapse').collapse('show')
+              setTimeout(function () {
+                window.location = linkId
+              }, 300)
+          })
+        })
+
+
+    </script>
+  <!-- Header -->
+  <div class="jumbotron">
+    <h1 class="display-4">Module 1</h1>
+    
+        <a href="./lesson1.html" class="btn btn-primary" role="button">Lesson 1</a>
+    
+        <a href="./lesson2.html" class="btn btn-primary" role="button">Lesson 2</a>
+    
+        <a href="./lesson3.html" class="btn btn-primary" role="button">Lesson 3</a>
+    
+        <a href="./lesson4.html" class="btn btn-primary" role="button">Lesson 4</a>
+    
+        <a href="./lesson5.html" class="btn btn-primary" role="button">Lesson 5</a>
+    
+  </div>
+<div class="container">
+    <h2>DLCS standards</h2>
+    <ul> 
+        <li>3-5.CT.a.2 Organize information in different ways to make it more useful/relevant.</li>
+    
+        <li>3-5.CT.b.1 Define an algorithm as a sequence of instructions that can be processed by a computer.</li>
+    
+        <li>3-5.CT.d.1 Individually and collaboratively create, test, and modify a program in a graphical environment (e.g., block-based visual programming language).</li>
+    
+        <li>3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors.</li>
+    
+    </ul>
+    <h2>Plan for instruction</h2>
+
+    <div id="accordion">
+        
+
+            <div class="card">
+                <div class="card-header" id="heading1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Crafting
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Review what we have done in the past 3 lessons: 1. Solved multiplicative comparison problem with a partner and drew a visual to match. 2. Learned how to use Scratch to create a visual for a word problem. 3. Spent 2 days creating a visual of that word problem on Scratch.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students recap what they have learned in Scratch and about multiplicative comparison word problems. Students T&T about how they will know if the visual correctly matches the word problem.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Can students recap what they have learned so far? Do students understand that they must first solve the problem themselves before critiquing the work of another group?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Today, we will be sharing our finished projects with another group. Partners will review their word problem and visual to decide if it correctly represents the problem.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Ask: What might you have to do with your partner BEFORE you can decide if the visual is correct? (Solve the problem yourself.)
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        You will need to solve the problem on your own first before you can decide if the visual is correct.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        After you have determined if the visual is correct or incorrect, you will look at the coding of the visual to see if there is any “debugging” or correcting that needs to happen within the algorithms. <a href="#rlm22" class="accordionLink" id="rlm22-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Computer Science Content Talking Point: Have students T &T- How do you fix something that is not working? Do you follow a certain series of steps? Come back together and discuss as a class. Sometimes our steps do not work, and we need to problem-solve to find out how we can fix our algorithms. We are going to see if other groups have accurately sequenced their algorithms. If something does not work the way we predict it was going to, we will have to debug and try again.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will turn and talk to discuss the Computer Science Talking Point about the importance of how debugging will work today.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-header" id="heading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Composing Meaning
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Purposefully picking groups to trade with each other.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will trade word problems with another group and get 5-10 minutes to solve the problem on their own.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Can partners solve the other pair’s multiplicative comparison word problem correctly?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Possible ways to pair: Multiplication and division Same operation Students who struggled/ Students who excelled
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will then review the Scratch visual made by the other group and decide if the visual matches or not.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Can they identify whether the visual correctly matches the problem?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Walk around and monitor student groups. Ask guiding questions if groups are struggling.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        They will have a handout where they will solve on one side, and answer whether the visual matches or not on the other side with sentence starters: The visual made on Scratch matches the word problem because..... The visual made on Scratch does not match the word problem because.... One thing that this group did well with making the Scratch visual was... One thing that would make the Scratch visual better is....
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are they using computer science vocabulary in their explanations and discussions? <a href="#rlm23" class="accordionLink" id="rlm23-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Processing
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Give students time to get with partners they switched problems with and discuss what they both found.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students are bringing their work and critique of the other partner’s Scratch to discuss what they found.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are students correct in their reasoning?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Walk around and listen to discussions.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are students using vocabulary while explaining?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Come back together as a full group after teams have had time to discuss.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Share out: Teams who thought the Scratch DID match- Project the visual and word problem on the board to show an example of this.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students are sharing out their thinking with the class using the handout they filled in from before.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Can students explain how to fix coding that is incorrect?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teams who thought the Scratch did NOT match- Project and have team explain their thinking.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        If any students got this far, they could show how they fixed the coding to fix mistakes in the Scratch visuals.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Have students share out ideas on how to fix visuals that did not match up with the word problem. <a href="#rlm24" class="accordionLink" id="rlm24-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        If time allows, let groups go back and try to fix coding if their visual was not accurate. <a href="#rlm25" class="accordionLink" id="rlm25-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRlm" aria-expanded="true"
+                            aria-controls="collapseRlm">
+                        Remote Learning Modifications
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseRlm" class="collapse" aria-labelledby="headingRlm" data-parent="#accordion">
+                <div class="card-body">
+                    
+                        <div class="card" id="rlm22">
+                            <div class="card-header">
+                                <h1>rlm22</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In a whole class Zoom session, discuss what we have learned in the past few lessons about multiplicative comparisons, Scratch, and creating visuals for word problems. Explain that partners will be sharing their final projects with another pair and decide if their visual created in Scratch correctly represents the word problem.
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm22-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm23">
+                            <div class="card-header">
+                                <h1>rlm23</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Utilize breakout rooms to allow partners to share their final Scratch projects with another pair of students (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm23-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm24">
+                            <div class="card-header">
+                                <h1>rlm24</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In a whole class Zoom session, have students share out about Scratch projects that matched and did not match the word problem
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm24-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm25">
+                            <div class="card-header">
+                                <h1>rlm25</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Utilize breakout rooms to allow partners to fix their coding if the visual was not accurate (teacher can join different breakout rooms to check-in with students as their way of “circulating”).
+</li>
+                                    
+                                </ul>
+                                <a href="#rlm25-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>

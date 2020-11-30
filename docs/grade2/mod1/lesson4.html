@@ -1,0 +1,892 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/rlosps">CSforAll Module Repository
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 2
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod1/index.html">Module 1</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod2/index.html">Module 2</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod3/index.html">Module 3</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 3
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                
+                    <a class="dropdown-item" href="/rlosps/grade3/mod1/index.html">Module 1</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade3/mod2/index.html">Module 2</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 4
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                
+                    <a class="dropdown-item" href="/rlosps/grade4/mod1/index.html">Module 1</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </nav>
+
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+          $('a[href*="#"].accordionLink').click(function (e) {
+            e.preventDefault()
+            let linkId = $.attr(this, 'href')
+            console.log(linkId)
+            $(linkId).closest('.collapse').collapse('show')
+              setTimeout(function () {
+                window.location = linkId
+              }, 300)
+          })
+        })
+
+
+    </script>
+  <!-- Header -->
+  <div class="jumbotron">
+    <h1 class="display-4">Module 1</h1>
+    
+        <a href="./lesson1.html" class="btn btn-primary" role="button">Lesson 1</a>
+    
+        <a href="./lesson2.html" class="btn btn-primary" role="button">Lesson 2</a>
+    
+        <a href="./lesson3.html" class="btn btn-primary" role="button">Lesson 3</a>
+    
+        <a href="./lesson4.html" class="btn btn-primary" role="button">Lesson 4</a>
+    
+        <a href="./lesson5.html" class="btn btn-primary" role="button">Lesson 5</a>
+    
+  </div>
+<div class="container">
+    <h2>DLCS standards</h2>
+    <ul> 
+        <li>3-5.CT.a.2 Organize information in different ways to make it more useful/relevant.</li>
+    
+        <li>3-5.CT.b.1 Define an algorithm as a sequence of instructions that can be processed by a computer.</li>
+    
+        <li>3-5.CT.d.1 Individually and collaboratively create, test, and modify a program in a graphical environment (e.g., block-based visual programming language).</li>
+    
+        <li>3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors.</li>
+    
+        <li>3-5.CAS.a.4 Explain the proper use and operation of security technologies (e.g., passwords, virus protection software, spam filters, popup blockers, cookies).</li>
+    
+        <li>3-5.CAS.b.1 Demonstrate responsible use of computers, peripheral devices, and resources as outlined in school rules [Acceptable Use Policy (AUP)].</li>
+    
+    </ul>
+    <h2>Plan for instruction</h2>
+
+    <div id="accordion">
+        
+
+            <div class="card">
+                <div class="card-header" id="heading1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Crafting
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Today, you will begin creating your final product on Scratch using the word problem visuals you created in the past lessons.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students should be sitting with their partner and gathering all materials from past lessons.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Observe students as they get started- make sure they have everything they need.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are students able to get right to work and login to Scratch on their own?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Digital Citizenship Content Talking Point: Before we use our computers, I want to assure that we all know the expectations for using computers in our classroom.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will turn and talk to discuss the Digital Citizenship Content Talking point before using their computers.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Have students T &T- What are some expectations that we should follow while using our computers? What does it look like?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students can use the visual of computer expectations created to remind them of how they should be using/treating their computers.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Come back together and discuss as a class.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students have the option to work on one computer and create one visual or share the visual and work together but create two separate projects in Scratch. (This allows them to be more creative if they want to use different sprites, etc.)
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Create a visual of the computer expectations (e.g., anchor chart, copy of expectations in CS folder, etc.) to allow students to have access throughout the plugged lessons.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Digital Citizenship Talking Point- Now that we know our expectations for using our computers in the classroom, we can login to Scratch. When we are logging in, what are the two things that we need to do so? You’re right! We need to input our username and password.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will turn and talk to discuss the Digital Citizenship Talking Point about the importance of having a secure password and not sharing their passwords with others.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Have students T & T- Why do we need passwords? How do you create a secure password? Why should you keep your password a secret?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Come back together and discuss as a class.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students should take out their checklist, so they make sure they complete each requirement. <a href="#rlm18" class="accordionLink" id="rlm18-ref">RLM</a>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Make sure students:  1. Title Project: Team Names- Word Problem Visual 2. Create algorithm for each character/object in word problem. 3. Type word problem into notes section of project. 4. Share. 5. Upload into Class Project Studio page. <a href="#rlm18" class="accordionLink" id="rlm18-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-header" id="heading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Composing Meaning
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher will circulate the classroom helping groups where needed.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students are working on their final product in Scratch.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are students able to log onto Scratch?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher will pull small groups as needed. <a href="#rlm19" class="accordionLink" id="rlm19-ref">RLM</a>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Example of a student final project
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are students coding their visuals correctly?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Word problem visualized: There are 7 pear trees on farm. There are 7 times as many apple trees as pear trees. How many apple trees are on the farm?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Are students working together or independently?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Processing
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher should model how to upload projects into the Scratch Studio. <a href="#rlm20" class="accordionLink" id="rlm20-ref">RLM</a>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Listen for what students found beneficial vs challenging about the project.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students turn and talk about reflection questions and share out <a href="#rlm21" class="accordionLink" id="rlm21-ref">RLM</a>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher asks students reflection questions at the end of the lesson, such as:
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Listen for ways to improve the project for next year’s class.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        How was the experience of creating a word problem on Scratch?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Was working with a partner helpful?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        What are the benefits of using Scratch to represent word problems?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        How could this project be improved?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Digital Citizenship Content Talking Point: Reflection- Have students T & T- Did you use the computers responsibly? What did that look like? If there was anything you could have done better, what would that have been? <a href="#rlm21" class="accordionLink" id="rlm21-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRlm" aria-expanded="true"
+                            aria-controls="collapseRlm">
+                        Remote Learning Modifications
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseRlm" class="collapse" aria-labelledby="headingRlm" data-parent="#accordion">
+                <div class="card-body">
+                    
+                        <div class="card" id="rlm18">
+                            <div class="card-header">
+                                <h1>rlm18</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In whole class Zoom session, discuss computer rules for home use, discuss the importance of a password, and prepare students to create their final Scratch projects.</li>
+                                    
+                                        <li>Utilize breakout rooms to allow pairs of students to work together to create their final Scratch projects (teacher can join different breakout rooms to check-in with students as their way of “circulating”).</li>
+                                    
+                                </ul>
+                                <a href="#rlm18-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm19">
+                            <div class="card-header">
+                                <h1>rlm19</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Utilize breakout rooms to allow pairs of students to work together to create their final Scratch projects (teacher can join different breakout rooms to check-in with students as their way of “circulating”).</li>
+                                    
+                                </ul>
+                                <a href="#rlm19-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm20">
+                            <div class="card-header">
+                                <h1>rlm20</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In whole class Zoom session, model how to upload projects into the Scratch studio or provide a video tutorial</li>
+                                    
+                                </ul>
+                                <a href="#rlm20-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm21">
+                            <div class="card-header">
+                                <h1>rlm21</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In a whole class Zoom session, discuss reflection questions.</li>
+                                    
+                                </ul>
+                                <a href="#rlm21-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>

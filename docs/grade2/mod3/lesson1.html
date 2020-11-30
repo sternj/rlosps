@@ -1,0 +1,827 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/rlosps">CSforAll Module Repository
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 2
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod1/index.html">Module 1</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod2/index.html">Module 2</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade2/mod3/index.html">Module 3</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 3
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                
+                    <a class="dropdown-item" href="/rlosps/grade3/mod1/index.html">Module 1</a>
+                
+                    <a class="dropdown-item" href="/rlosps/grade3/mod2/index.html">Module 2</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Grade 4
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                
+                    <a class="dropdown-item" href="/rlosps/grade4/mod1/index.html">Module 1</a>
+                
+
+
+
+
+              </div>
+            </li>
+          
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </nav>
+
+    
+    
+    
+    <script>
+        $(document).ready(function() {
+          $('a[href*="#"].accordionLink').click(function (e) {
+            e.preventDefault()
+            let linkId = $.attr(this, 'href')
+            console.log(linkId)
+            $(linkId).closest('.collapse').collapse('show')
+              setTimeout(function () {
+                window.location = linkId
+              }, 300)
+          })
+        })
+
+
+    </script>
+  <!-- Header -->
+  <div class="jumbotron">
+    <h1 class="display-4">Module 3</h1>
+    
+        <a href="./lesson1.html" class="btn btn-primary" role="button">Lesson 1</a>
+    
+        <a href="./lesson2.html" class="btn btn-primary" role="button">Lesson 2</a>
+    
+        <a href="./lesson3.html" class="btn btn-primary" role="button">Lesson 3</a>
+    
+        <a href="./lesson4.html" class="btn btn-primary" role="button">Lesson 4</a>
+    
+        <a href="./lesson5.html" class="btn btn-primary" role="button">Lesson 5</a>
+    
+  </div>
+<div class="container">
+    <h2>DLCS standards</h2>
+    <ul> 
+        <li>3-5.CT.a.2 Organize information in different ways to make it more useful/relevant</li>
+    
+        <li>3-5.CT.b.1 Define an algorithm as a sequence of instructions that can be processed by a computer</li>
+    
+        <li>3-5.CT.d.1 Individually and collaboratively create, test, and modify a program in a graphical environment (e.g., block-based visual programming language</li>
+    
+        <li>3-5.CT.d.3 Use interactive debugging to detect and correct simple program errors</li>
+    
+    </ul>
+    <h2>Plan for instruction</h2>
+
+    <div id="accordion">
+        
+
+            <div class="card">
+                <div class="card-header" id="heading1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Crafting
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher: Today you will be moving around the classroom to follow an algorithm. An algorithm is a sequence of events. Many of you have used Scratch block-based coding in the past. Today,we will use this to move around the room
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will listen as the teacher reviews block-based coding and an algorithm.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher will check that students are following the posted algorithms in the correct sequence.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher will put an unplugged code on the board for students to follow. This can be printed out and hung up or put under the projector using the smartboard
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher will stop and give feedback if they do not
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher: Remember that in block-based coding, the algorithm is followed in order from top to bottom
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will stand up behind their desks and make sure they have room to move around. Students will follow the first algorithm with the teacher.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher actsout the algorithm posted with the students two times
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher posts another algorithm and has students act it out on their own and watches how they follow the algorithm <a href="#rlm1" class="accordionLink" id="rlm1-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will follow the second algorithm on their own
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher: Turn and talk about the answers to these questions
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will turn and talk about the questions asked and then share out their thinking
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        What was difficult about this task? Were you able to follow the algorithm exactly? Do you think you can make your own algorithm?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-header" id="heading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            Composing Meaning
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Important to thoughtfully pair students before lesson (SPED with regular ed, Higher EL with lower EL of same language, keep behaviors in mind etc.)
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students are working in pairs to create their own 4 -event algorithm. They will cut and glue it onto a piece of paper. <a href="#rlm3" class="accordionLink" id="rlm3-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teachers will be circulating and checking sequencing.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Explain to students that they will now be constructing their own algorithms for another partner group to follow. Student should be placed in pairs for this activity so they can work together. They should also be assigned another partnership to work with once the algorithms are complete. <a href="#rlm2" class="accordionLink" id="rlm2-ref">RLM</a>
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Partners will get with another pair and switch algorithms. The partners will have to follow the algorithm of the other group.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Asking probing questions, “Are you sure that goes before this?” “Will other students know what you mean by this language?” etc
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher: Today you will be making your own algorithm to see if another group of students can follow. Your algorithm will have 4 events just like the ones you just followed with me
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Students will make sure the other group is following their algorithm correctly. <a href="#rlm4" class="accordionLink" id="rlm4-ref">RLM</a>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        You will be able to use blocks that are already made and cut up to put your algorithm together, or you can use the blank template to make up your own algorithm.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        You will need to put your algorithm in the exact order you want your classmates to complete the steps in, from top to bottom
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3"
+                                aria-expanded="true"
+                                aria-controls="collapseOne">
+                            processing
+                        </button>
+                    </h5>
+                </div>
+
+
+                <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">What is the teacher doing?</div>
+                                <div class="col">What are the students doing?</div>
+                                <div class="col">Checks for Understanding</div>
+                            </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher asks: What did you learn about making an algorithm?
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Turn and talk in their groups about these questions and then report out to the class.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher walks around and listens to conversations.
+
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        What did you have to know to make sure the other group followed your algorithm correctly?
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Allow time for students to fill in any new vocabulary in their Computer Science Vocabulary Graphic Organizer. <a href="#rlm6" class="accordionLink" id="rlm6-ref">RLM</a>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Teacher will take notes on which students felt this was difficult and who did not for future partnerships.
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Do you think you will be able to make an algorithm like this on the computer
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                                <div class="row">
+                                    
+                                        <div class="col">
+                                            
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        Have students discuss questions with the students in their groups and then have volunteers share out. <a href="#rlm5" class="accordionLink" id="rlm5-ref">RLM</a>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                        <div class="col">
+                                            
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseRlm" aria-expanded="true"
+                            aria-controls="collapseRlm">
+                        Remote Learning Modifications
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseRlm" class="collapse" aria-labelledby="headingRlm" data-parent="#accordion">
+                <div class="card-body">
+                    
+                        <div class="card" id="rlm1">
+                            <div class="card-header">
+                                <h1>rlm1</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In a whole class Zoom session, screen share the unplugged code that the teacher will model twice</li>
+                                    
+                                </ul>
+                                <a href="#rlm1-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm2">
+                            <div class="card-header">
+                                <h1>rlm2</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Utilize breakout rooms to partner students (teacher can join different breakout rooms to check-in with students as their way of "circulating"</li>
+                                    
+                                        <li>Teacher will post a link in the Zoom chat that will lead students to the algorithm they will be acting out with one another</li>
+                                    
+                                </ul>
+                                <a href="#rlm2-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm3">
+                            <div class="card-header">
+                                <h1>rlm3</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Utilize breakout rooms to allow pairs of students to create a 4-step algorithm on a Microsoft Word document (teacher can join different breakout rooms to check-in with students as their way of "circulating")</li>
+                                    
+                                </ul>
+                                <a href="#rlm3-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm4">
+                            <div class="card-header">
+                                <h1>rlm4</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Utilize breakout rooms to allow pairs of students to switch algorithms on a shared Microsoft Word document(teacher can join different breakout rooms to check-in with students as their way of "circulating")</li>
+                                    
+                                </ul>
+                                <a href="#rlm4-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm5">
+                            <div class="card-header">
+                                <h1>rlm5</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>In a whole class Zoom session, discuss algorithms and group work.</li>
+                                    
+                                </ul>
+                                <a href="#rlm5-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+                        <div class="card" id="rlm6">
+                            <div class="card-header">
+                                <h1>rlm6</h1>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    
+                                        <li>Post the Computer Science Vocabulary Graphic Organizer for students to access on your preferred application (Schoology, Teams, etc.)</li>
+                                    
+                                </ul>
+                                <a href="#rlm6-ref" class="accordionLink">Back to Lesson</a>
+                            </div>
+                        </div>
+
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
