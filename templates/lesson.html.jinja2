@@ -1,5 +1,20 @@
 {% extends "_base.html.jinja2" %}
 {% block content %}
+    <script>
+        $(document).ready(function() {
+          $('a[href*="#"].accordionLink').click(function (e) {
+            e.preventDefault()
+            let linkId = $.attr(this, 'href')
+            console.log(linkId)
+            $(linkId).closest('.collapse').collapse('show')
+              setTimeout(function () {
+                window.location = linkId
+              }, 300)
+          })
+        })
+
+
+    </script>
   <!-- Header -->
   <div class="jumbotron">
     <h1 class="display-4">{{ module.display_name }}</h1>
